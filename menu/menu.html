@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu- Oslo Diner</title>
+    <link rel="icon" href="/images/oslo_icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../main.css" >
+</head>
+
+
+<body>
+    <div class="backdrop"></div>
+
+    <header class="osloixel-header">
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html"><img src="../images/oslo_logo.png" href="../index.html" alt="oslo logo"></a>
+            <a href="#" class="nav active">Menu</a>
+            <a href="../about/about.html" class="nav">Team</a>
+            <a href="../about/about.html" class="nav">About Us</a>
+            <a href="../index.html" class="nav">Home</a>
+        </div>
+    </header>
+
+
+
+    <section class="oslo-section">
+
+        <div class="title">
+            <h2>Welcome! See Our Menu</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="oslo-wrapper">
+            <div class="oslo-container">
+                <div class="project">
+                    <figure>
+                        <img src="../images/01.png" alt="Oslo Diner">
+                        <figcaption>
+                            <div>
+                                <h3>African Cuisine</h3>
+                                <button value="5000" class="button cta">Order</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <img src="../images/02.png" alt="a Kiwi, lime, pear" title="Juicy Fruit">
+                        <figcaption>
+                            <div>
+                                <h3>Bed and Breakfast</h3>
+                                <button value="8000" class="button cta">Order</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <img src="../images/03.png" alt="Yellow roller coaster track" title="Roller Track">
+                        <figcaption>
+                            <div>
+                                <h3>Vegeterian</h3>
+                                <button value="2600" class="button cta">Order</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <img src="../images/04.png" alt="Yellow play balls" title="Yellow">
+                        <figcaption>
+                            <div>
+                                <h3>Smoothies</h3>
+                                <button value="1700" class="button cta">Order</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <img src="../images/05.png" alt="Side of building" title="The Fourth Wall">
+                        <figcaption>
+                            <div>
+                                <h3>Burgers & Sandwiches</h3>
+                                <button value="2500" class="button cta">Order</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <figure>
+                        <img src="../images/04.png" alt="Skyline" title="Skyline">
+                        <figcaption>
+                            <div>
+                                <h3>Pasteries</h3>
+                                <button value="3000" class="button cta">Order</button>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+            <div class="bill_container">
+                <h2 class="dispaly_bill"></h2>
+            </div>
+            <div class="user_data">
+                    <input type="email" name="email" placeholder="user@mail.com"><br><br>
+                    <form>
+                            <script src="https://api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+                            <button type="button" onClick="payWithRave()">Pay Now</button>
+                        </form>
+                        
+                        <script src="menu.js"></script>
+    
+            </div>
+        </div>
+        <div class="footer">
+                <p>&copy; team_oslo 2019</p>
+              </div>
+</body>
+
+</html>
