@@ -3,7 +3,7 @@
  
  To vist the site <a href="https://oslo-diner.github.io/oslodiner/">CLICK HERE</a>
 
-## To try out the payment gateway use thses dummy Card deatils 
+## To try out the payment gateway use these dummy Card deatils 
 
 #Test MasterCard PIN authentication
 5531 8866 5214 2950
