@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -132,12 +132,63 @@
     </section>
 
 
+<section id="testimonial-section">
+    <div class="testimonials">
+      <div class="inner">
+        <h1>Testimonials</h1>
+        <div class="border"></div>
 
+        <div class="row">
+          <div class="col mySlides">
+            <div class="testimonial">
+              <h1 class="name">Peter Emmanuel</h1>
+              <p>
+               “The Pounded yam and egusi soup tastes so delicious”
+              </p>
+            </div>
+          </div>
+
+          <div class="col mySlides">
+            <div class="testimonial">
+              <h1 class="name">Nma O. Nma</h1>
+               <p>
+                “Wait till you try their afang soup”
+              </p>
+            </div>
+          </div>
+
+          <div class="col mySlides">
+            <div class="testimonial">
+              <h1 class="name">Chukwuebuka Ernest</h1>
+              <p>“They have great customer service”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
     <div class="footer">
         <p>&copy; team_oslo 2019</p>
     </div>
     <script src="main.js"></script>
+    <script type="text/javascript">
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1} 
+  slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+    </script>
 </body>
 
 </html>
