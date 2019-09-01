@@ -43,7 +43,6 @@ function payWithRave() {
             }],
             onclose: function () {
                 window.location.reload(true);
-                alert("You closed you Transaction");
                 // Redirect()
             },
             callback: function (response) {
@@ -53,13 +52,13 @@ function payWithRave() {
                     response.tx.chargeResponseCode == "00" ||
                     response.tx.chargeResponseCode == "0"
                 ) {
-                    redirectHome();
                     alert("Transaction was successful\n Thank You");
+                    redirectHome();
                     //document.write("thank you for shopping with us"); // redirect to a success page
                 } else {
                     
-                    window.location.reload(true);
                     alert("Transaction not successful\n Try Again");
+                    window.location.reload(true);
                     // redirect to a failure page.
                 }
 
@@ -72,5 +71,5 @@ function payWithRave() {
 
 
 function redirectHome() {
-    window.location.assign("index.html");
+    window.location.assign("../index.html");
 }

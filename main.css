@@ -94,7 +94,7 @@ body {
 
 .bg {
   /* The image used */
-  background-image: url(images/3d%20glass%20window%20logo%20mockup.jpg);
+  background-image: url(images/homepage.jpg);
   /* Full height */
   width: 100%;
   height: 500px;
@@ -347,6 +347,7 @@ figure {
   padding: 1em;
   background: #966116;
   color: #fff;
+  text-align: center;
 }
 
 .project h3 {
@@ -574,3 +575,111 @@ div .descr .name {
   }
 }
 
+/* ____________________________________________________________________________
+__________________CSS STYLING FOR THE CONTACT US PAGE___________________________ */
+
+.cont-bg {
+  /* The image used */
+  background-image: url(./images/wall2.png);
+  /* Full height */
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#intro{
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  font-size: 4em;
+  font-variant: small-caps;
+  color: white;
+}
+
+#contact-heading{
+  text-align: center;
+  color: orangered;
+}
+
+#contact-heading hr{
+  background: orangered;
+  width: 140px;
+  height: 4px;
+  padding: 0 0 3px 0;
+  margin: 10px auto;
+}
+
+#contact{
+  max-width: 100%;
+}
+
+#contact-form{
+  width: 50%;
+  padding: 5% 0 5% 10%;
+  
+}
+#contact-form form input{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2% 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  color: orangered;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  color: orangered;
+}
+
+#contact-form form button{
+  background-color: orangered;
+}
+
+#contact-address{
+  position: absolute;
+  left: 50%;
+  top: 120%;
+  padding: 0 5%;
+}
+
+#contact-address a{
+  font-weight: bold;
+}
+
+/* ________________________________________________________________________
+_________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
+
+.fqcontainer{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.fqcontainer h2{
+  font-size: 1.5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fqcontainer p{
+  font-size: 1.2em;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.fqcontainer p a{
+  font-style: oblique;
+  background: black;
+  color: orangered;
+  font-size: 1em;
+}
