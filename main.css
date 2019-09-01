@@ -7,7 +7,8 @@ body {
   height: 100%;
   /* padding: 20px; */
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font change*/
+  font-family: Candara, sans-serif;
 
 }
 
@@ -70,6 +71,7 @@ body {
   padding: 25px 3%;
   text-decoration: none;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .active {
@@ -79,9 +81,8 @@ body {
 
 /* Change color on hover */
 .topnav a.nav:hover {
-  background-color: #abb0b3;
-  color: white;
-
+/*   background-color: #abb0b3; */
+  color: #f67504;
   opacity: 0.8;
   filter: alpha(opacity=100);
   /* For IE8 and earlier */
@@ -203,7 +204,7 @@ grid-template-columns: auto auto;
 
 .content {
   background-color: white;
-  padding: 10px;
+  padding: 0;
 }
 
 .item1 {
@@ -254,6 +255,8 @@ div.content img {
   text-align: center;
   cursor: pointer;
   width: 100%;
+/*  button height  */
+  height: 2em;
 }
 
 /*Team*/
