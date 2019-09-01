@@ -368,51 +368,7 @@ figure {
 /* .cta:hover{
   background: red;
 } */
-button {
-  background: #966116;
-  color: #fff;
-  border: none;
-  position: relative;
-  height: 30px;
-  font-size: 1.2rem;
-  padding: 0 2em;
-  /* width: 70%; */
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-  border-radius: 8px;
-}
 
-button:hover {
-  background: #fff;
-  color: #966116;
-}
-
-/* button:before,button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #1AAB8A;
-  transition:400ms ease all;
-} */
-/* button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-} */
-/* button:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
-} */
-/*
-
-When the browser is 960px or larger.
-
-*/
 
 @media screen and (min-width: 960px) {
   .oslo-wrapper {
