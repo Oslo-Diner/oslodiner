@@ -616,8 +616,9 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
 }
 
 #contact-form{
-  width: 50%;
+  width: 60%;
   padding: 5% 0 5% 10%;
+  display: inline-block;
   
 }
 #contact-form form input{
@@ -648,8 +649,9 @@ textarea {
 }
 
 #contact-address{
-  position: absolute;
-  left: 50%;
+  /* position: absolute; */
+  display: inline-block;
+  left: 40%;
   top: 120%;
   padding: 0 5%;
 }
@@ -657,6 +659,29 @@ textarea {
 #contact-address a{
   font-weight: bold;
 }
+
+@media(max-width: 750px) {
+  
+  #contact-form{
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    display: block;
+    
+  }
+
+  #contact-address{
+    display: block;
+    width: 55%;
+    margin: auto;
+  }
+
+  #intro{
+    left: 10%;
+  }
+}
+
+
 
 /* ________________________________________________________________________
 _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
