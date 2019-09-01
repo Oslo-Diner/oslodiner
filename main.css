@@ -708,3 +708,10 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
   color: orangered;
   font-size: 1em;
 }
+
+
+@media(max-width: 750px) {
+.youtube{
+  max-width: 400px;
+}
+}
