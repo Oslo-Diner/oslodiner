@@ -2,13 +2,18 @@
   box-sizing: border-box;
 }
 
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   height: 100%;
   /* padding: 20px; */
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  
 
+}
+h1, h2, a, p, h3, button {
+  font-family: candara, sans-serif;
 }
 
 /*do not edit this line of code*/
@@ -307,18 +312,25 @@ ___________CSS STYLING FOR THE MENU PAGE________________________________ */
 }
 
 .title h2 {
-  font-size: 35px;
+  font-size: 2em;
   text-align: center;
-  text-transform: capitalize;
-  color: #474747;
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 1.1px;
 }
 
 .title-underline {
-  background: #ad343e;
+ /*  background: #ad343e;
   width: 140px;
   height: 4px;
   padding: 0 0 3px 0;
-  margin: 10px auto
+  margin: 10px auto */
+  /*margin-left: 0;*/
+  width: 80%;
+  height: 1px;
+  border: 0;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+
 }
 
 
@@ -461,6 +473,86 @@ When the browser is 960px or larger.
 
 /* _____________________________________________________________________________________________________________________
 ___________________CSS STYLING FOR ABOUT PAGE___________________________________________________________ */
+#bookBtn{
+  text-decoration: none;
+  padding: 5px;
+  color: #000;
+  border: 2px solid #f67504;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border-radius: 5px;
+ /* margin-top: 10px;*/
+  text-align: center;
+}
+#bookBtn:hover{
+  background-color: #f67504;
+}
+
+.testimonials{
+  padding: 40px 0;
+  background: #f1f1f1;
+  color: #434343;
+  text-align: center;
+}
+.inner{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.border{
+  width: 160px;
+  height: 5px;
+  background: #f67504;
+  margin: 26px auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col{
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testimonial{
+  background: #fff;
+  padding: 30px;
+}
+.testimonial img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars{
+  color: #6ab04c;
+  margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:960px) {
+.col{
+  flex: 100%;
+  max-width: 80%;
+}
+}
+
+@media screen and (max-width:600px) {
+.col{
+  flex: 100%;
+  max-width: 100%;
+}
+}
 
 #aboutus {
   margin: 5% 2%;
@@ -561,7 +653,7 @@ div .descr .name {
 
 .title,
 #oslo-img {
-  border: 15px solid rgba(128, 128, 128, 0.1);
+  /*border: 15px solid rgba(128, 128, 128, 0.1);*/
     /* margin: auto; */
     max-height: 385px;
 }
