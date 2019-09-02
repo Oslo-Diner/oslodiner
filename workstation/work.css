@@ -46,7 +46,7 @@ body{
 
 }
 
-/* llanding page */
+/* Landing page */
 .landing{
     background-image: url("../images/wall.jpg");
     height: 100vh;
@@ -96,7 +96,7 @@ body{
     font-family: cursive;
 }
 
-/* Join Community Button */
+/*Join Community Button */
 .cta{
     background: black;
     padding: .5em;
