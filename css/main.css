@@ -218,6 +218,7 @@ body {
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 93vh, 0 100%);
   position: relative;
+  overflow: hidden;
 }
 
 .hero-text {
@@ -712,6 +713,7 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   background-repeat: no-repeat;
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  overflow: hidden;
 }
 
 #contact-heading {
