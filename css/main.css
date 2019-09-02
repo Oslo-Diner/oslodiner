@@ -9,10 +9,14 @@ html {
 }
 
 body {
+  position: relative;
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  overflow: auto;
 }
+
 
 /*do not edit this line of code*/
 .backdrop {
@@ -163,6 +167,9 @@ body {
   position: relative;
   padding: 50px 0;
   z-index: 5;
+  width: 100vw;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 /* HERO BACKGROUND OVERLAY */
@@ -211,7 +218,7 @@ body {
 
 .bg {
   background-image: url(../images/homepage.jpg);
-  width: 100%;
+  max-width: 100%;
   height: 650px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -274,6 +281,10 @@ hr {
   font-size: 5em;
 }
 
+.video{
+  overflow: hidden;
+}
+
 /*
 .item1 { grid-area: About; }
 .item2 { grid-area: APhoto; }
@@ -290,6 +301,7 @@ hr {
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
   padding: 10px;
+
 }
 
 .menu-heading{
@@ -303,16 +315,18 @@ hr {
   text-align: center;
   padding: 20px;
 }
+
 @media (max-width: 730px) {
   .grid-container {
     grid-template-columns: auto auto;
   }
 }
+
 @media (max-width: 600px) {
   .grid-container {
-    display: block;
-    width: 25rem;
-    margin: auto;
+   grid-auto-flow: row;
+   display: block;
+ 
   }
 }
 
@@ -342,10 +356,6 @@ hr {
   grid-row: 2;
 }
 
-/* .item4 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-} */
 
 .item9 {
   grid-column-start: 1;
