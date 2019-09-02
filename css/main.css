@@ -303,22 +303,12 @@ hr {
   text-align: center;
   padding: 20px;
 }
-<<<<<<< HEAD:main.css
-
-@media(max-width: 730px) {
-=======
 @media (max-width: 730px) {
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   .grid-container {
     grid-template-columns: auto auto;
   }
 }
-<<<<<<< HEAD:main.css
-
-@media(max-width: 600px) {
-=======
 @media (max-width: 600px) {
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   .grid-container {
     display: block;
     width: 25rem;
@@ -601,10 +591,6 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
   margin: 0 2% 2% 0;
   overflow: hidden;
 }
-<<<<<<< HEAD:main.css
-
-=======
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
 #about-oslo {
   max-width: 100%;
   margin: auto;
@@ -615,10 +601,6 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
     float: none;
     width: 80%;
   }
-<<<<<<< HEAD:main.css
-
-=======
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   #about-oslo {
     max-width: 80%;
     margin: auto;
@@ -703,36 +685,19 @@ div .descr .name {
   max-height: 385px;
 }
 
-<<<<<<< HEAD:main.css
-
-@media(max-width: 790px) {
-
-=======
 @media (max-width: 790px) {
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   .title,
   #oslo-img {
     margin: auto;
   }
 }
 
-<<<<<<< HEAD:main.css
-
-=======
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
 .send-to-team-url {
   text-align: center;
   margin: 30px;
 }
-<<<<<<< HEAD:main.css
-
 button.border-url:hover {
   border: 1px solid#966116;
-
-=======
-button.border-url:hover {
-  border: 1px solid#966116;
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
 }
 
 /* ____________________________________________________________________________
@@ -752,18 +717,6 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   overflow: hidden;
 }
 
-<<<<<<< HEAD:main.css
-#intro {
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  font-size: 4em;
-  font-variant: small-caps;
-  color: white;
-}
-
-=======
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
 #contact-heading {
   text-align: center;
   color: orangered;
@@ -782,24 +735,15 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   margin: 4rem;
 }
 
-<<<<<<< HEAD:main.css
-=======
 #contact p {
 line-height: 23px;
 }
 
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
 #contact-form {
   width: 60%;
   padding: 5% 0 5% 10%;
   display: inline-block;
-<<<<<<< HEAD:main.css
-
 }
-
-=======
-}
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
 #contact-form form input {
   width: 100%;
   padding: 12px 20px;
@@ -824,10 +768,6 @@ textarea {
 }
 
 #contact-form form button {
-<<<<<<< HEAD:main.css
-  background-color: orangered;
-}
-=======
     padding: 0.4rem 1.2rem;
     font-size: 1.5rem;
     line-height: 1.5;
@@ -862,7 +802,6 @@ textarea {
     background-color: #de6c09;
     border-color:#de6c09
   }
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
 
 #contact-address {
   /* position: absolute; */
@@ -876,21 +815,13 @@ textarea {
   font-weight: bold;
 }
 
-<<<<<<< HEAD:main.css
 @media(max-width: 750px) {
 
-=======
-@media (max-width: 750px) {
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   #contact-form {
     width: 80%;
     padding: 0;
     margin: auto;
     display: block;
-<<<<<<< HEAD:main.css
-
-=======
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   }
 
   #contact-address {
@@ -899,13 +830,8 @@ textarea {
     margin: auto;
   }
 
-<<<<<<< HEAD:main.css
   #intro {
     left: 10%;
-=======
-  .topnav-container{
-    display: none;
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   }
 
 }
@@ -936,12 +862,8 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
   font-size: 1em;
 }
 
-<<<<<<< HEAD:main.css
 
 @media(max-width: 750px) {
-=======
-@media (max-width: 750px) {
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
   .youtube {
     max-width: 400px;
   }
@@ -949,7 +871,6 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
-<<<<<<< HEAD:main.css
 .team-bg{
   background-image: url(./images/Shop.png);
   width: 100%;
@@ -1024,5 +945,3 @@ margin-top: 5rem;
 .team-item .team-item-1{
   background-image: url(./team/images/Agbo\ Monica.png);
 }
-=======
->>>>>>> a798be5fbe402d4c728f1138e208f4f4c32648ea:css/main.css
