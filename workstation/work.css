@@ -1,0 +1,173 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 100%;
+    margin: 0;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    clear: both;
+    width: 100%;
+    /* opacity: 0.8; */
+    filter: alpha(opacity=50);
+    /* For IE8 and earlier */
+    padding: 0 5%;
+}
+
+
+/* Style the topnav links */
+.topnav a.nav {
+    float: right;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 2% 3%;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.active:hover {
+    background-color: #f67504;
+}
+
+/* Change color on hover */
+.topnav a.nav:hover {
+    background-color: #f67504;
+    color: white;
+
+    opacity: 0.8;
+    filter: alpha(opacity=100);
+    /* For IE8 and earlier */
+
+}
+
+/* llanding page */
+.landing{
+    background-image: url("../images/wall.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 4.9%;
+}
+
+/* welcome text */
+.landing h1{
+    position: relative;
+    text-align: center;
+    color: black;
+    font-family: cursive;
+    font-size: 6em;
+    -webkit-transform: rotate(-15deg);
+    top: 2em;
+}
+
+/* workstation benefits*/
+.midsection{
+    text-align: center;
+    text-decoration: none;
+    list-style-type: none;
+    background-color: #f67504;
+    padding: 10px 0 30px 0;
+    margin-top: -15%;
+}
+
+.midsection ul{
+    display: flex;
+    padding: 0 30px 15px;
+    margin: auto;
+    width: 50%;
+    position: relative;
+
+}
+.midsection ul li{
+    list-style-type: none;
+    text-align: center;
+}
+
+.midsection ul li blockquote{
+    color: white;
+    font-size: 1.1em;
+    font-family: cursive;
+}
+
+/* Join Community Button */
+.cta{
+    background: black;
+    padding: .5em;
+    border-radius: 6px;
+    color: white;
+    border: black 2px solid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+.cta:hover{
+    text-decoration: none;
+    border: white 2px solid;
+    color: #f67504;
+    background: black;
+}
+
+/* Newsletter */
+.signup{
+    background-color: #333;
+    padding: 5%;
+    text-align: center;
+}
+
+input[type=text]{
+    width: 25%;
+    border: black 2px solid;
+    box-sizing: border-box;
+    margin: 8px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input[type=text]:hover{
+    border: #f67504 2px solid;
+    cursor: pointer;
+}
+
+input[type=submit]{
+    width: 15%;
+    border: black 2px solid;
+    box-sizing: border-box;
+    margin: 8px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f67504;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    border: #fff 2px solid;
+    background-color: black;
+    color: white;
+}
+
+
+/* Footer */
+.footer {
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 15;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    filter: alpha(opacity=50);
+    height: 3rem;
+    /* For IE8 and earlier */
+  }
