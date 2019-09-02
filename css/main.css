@@ -872,7 +872,7 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
 .team-bg{
-  background-image: url(./images/Shop.png);
+  background-image: url(../images/Shop.png);
   width: 100%;
   display: flex;
   margin-top: 63px;
