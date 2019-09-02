@@ -3,11 +3,14 @@ var cta = document.querySelectorAll(".cta");
 var backDrop =document.querySelector(".backdrop");
 var emailForm =document.querySelector(".modal");
 var totalBill;
+<<<<<<< HEAD
 
 backDrop.addEventListener("click", ()=>{
     confirm("You are about to close you transaction")
     window.location.reload(true);
 })
+=======
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
 //to get the cost of each item when you click the oder button
 for (var i = 0; i < cta.length; i++) {
     cta[i].addEventListener("click", (foo) => {

@@ -1,9 +1,13 @@
 * {
   box-sizing: border-box;
 }
+<<<<<<< HEAD
 html{
   scroll-behavior: smooth;
 }
+=======
+
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
 
 body {
   height: 100%;
@@ -96,7 +100,10 @@ body {
 
 .bg {
   /* The image used */
+<<<<<<< HEAD
   margin-top: 63px;
+=======
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
   background-image: url(images/homepage.jpg);
   /* Full height */
   width: 100%;
@@ -201,6 +208,12 @@ grid-template-columns: auto auto;
   }
 }
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
 .content {
   background-color: white;
   padding: 10px;
@@ -269,6 +282,11 @@ div.desc {
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
 main {
   margin-top: 10rem;
 }
@@ -573,6 +591,7 @@ div .descr .name {
   }
 }
 
+<<<<<<< HEAD
 
 .send-to-team-url{
   text-align: center;
@@ -583,12 +602,17 @@ button.border-url:hover{
   
 }
 
+=======
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE CONTACT US PAGE___________________________ */
 
 .cont-bg {
   /* The image used */
+<<<<<<< HEAD
   /* margin-top: 63px; */
+=======
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
   background-image: url(./images/wall2.png);
   /* Full height */
   width: 100%;
@@ -622,7 +646,10 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
 
 #contact{
   max-width: 100%;
+<<<<<<< HEAD
   margin: 4rem;
+=======
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
 }
 
 #contact-form{
@@ -724,6 +751,7 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 .youtube{
   max-width: 400px;
 }
+<<<<<<< HEAD
 }
 
 /* ____________________________________________________________________________
@@ -731,3 +759,6 @@ __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
 
 
 
+=======
+}
+>>>>>>> This is the accomodation page inorder for clients to be able to rent halls for their paties, birthdays, weddingsetc
