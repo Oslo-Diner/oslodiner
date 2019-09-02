@@ -630,6 +630,7 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
   max-width: 1200px;
   margin: 0 auto;
   clear: both;
+  padding-top: 64px;
 }
 
 section.dev {
@@ -824,7 +825,8 @@ textarea {
   font-weight: bold;
 }
 
-@media (max-width: 750px) {
+@media(max-width: 750px) {
+
   #contact-form {
     width: 80%;
     padding: 0;
@@ -838,8 +840,8 @@ textarea {
     margin: auto;
   }
 
-  .topnav-container{
-    display: none;
+  #intro {
+    left: 10%;
   }
 
 }
@@ -870,7 +872,8 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
   font-size: 1em;
 }
 
-@media (max-width: 750px) {
+
+@media(max-width: 750px) {
   .youtube {
     max-width: 400px;
   }
@@ -878,3 +881,77 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
+.team-bg{
+  background-image: url(./images/Shop.png);
+  width: 100%;
+  display: flex;
+  margin-top: 63px;
+  height: 70vh;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team-main{
+margin-top: 5rem;
+}
+
+#overlay {
+  position: absolute;
+    width: 100%;
+    height: 70vh;
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    background-color: rgba(0,0,0,0.5);
+    /* z-index: 2; */
+    cursor: pointer;
+    overflow: hidden;
+}
+.team-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* width: 800px; */
+  /* border: 1px solid gray; */
+  padding: 8px;
+  flex-wrap: wrap;
+}
+
+.team-item {
+  /* border: 1px solid gray; */
+  padding: 4px;
+  /* background: #A4F2D8; */
+  font-family: verdana;
+  font-size: 19px;
+  text-align: center;
+  /* color: gray; */
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.team-img{
+  background: url(./team/images/Udeme_Chris.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  border: #d1af5f solid 0.5rem;
+}
+
+.team-des p{
+  margin: 0;
+}
+
+.team-item .team-item-1{
+  background-image: url(./team/images/Agbo\ Monica.png);
+}

@@ -31,8 +31,11 @@ function payWithRave() {
     var customer_emaill = document.querySelector('input[type=email]').value;
     // this line grabs the ammount that the user can charged properlly. 
     var amountToPay = totalBill;
-    if (!customer_emaill) {
-        alert("pleas add a valied Email address")
+    //This is a REGEX filter to ensure that the email address is valid E.g contains (@ symbol, .something)
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!customer_emaill || !filter.test(customer_emaill)) {
+        alert("Please add a valid Email address")
     } else {
 
         var x = getpaidSetup({
