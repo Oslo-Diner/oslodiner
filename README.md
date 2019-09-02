@@ -1,9 +1,3 @@
-## Oslo Workstation is the latest addition
-Files are in the workstation folder and images in the original images folder. 
-
-Please check for responsiveness.
-
-
 ## oslo_diner
  Oslo Diner website with Rave Flutterwave payment gateway
  
