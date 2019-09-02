@@ -1,16 +1,17 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
 body {
   height: 100%;
-  /* padding: 20px; */
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-
 }
 
 /*do not edit this line of code*/
@@ -29,38 +30,113 @@ body {
   position: fixed;
   display: none;
   z-index: 200;
-  top: 20%;
-  left: 30%;
-  width: 40%;
+  top: 50%;
+  left: 50%;
+  width: 50%;
   background: white;
   padding: 1rem;
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
-  transition: all 4000ms;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+}
+
+.pay{
+  padding: 0.6rem 1rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  background: transparent;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  color: #de6c09;
+  background-image: none;
+  border-color: #de6c09;
+}
+
+.pay:hover {
+  color: #fff;
+  background-color: #de6c09;
+  border-color: #de6c09;
+}
+
+.pay:focus{
+  box-shadow: 0 0 0 #de6c09;
+}
+
+.pay:active{
+  color: #fff;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.modal input {
+  padding: 0.45rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+  width: 60%;
 }
 
 /*down to this line*/
-
 .pay_btn {
   width: 5rem;
 }
 
+#myTopnav{
+  position: fixed;
+}
+
 /* Style the top navigation bar */
 .topnav {
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #333;
   position: fixed;
-  z-index: 10;
   top: 0;
   clear: both;
   width: 100%;
-  /* opacity: 0.8; */
+  height: 90px;
   filter: alpha(opacity=50);
-  /* For IE8 and earlier */
-  padding: 0 5%;
-
+  /*ForIE8andearlier*/padding: 10px 5%;
+  border-bottom: 5px solid goldenrod;
+  z-index: 10;
+  transition: border-bottom .2s ease;
+  -webkit-transition: border-bottom .2s ease;
+  -moz-transition: border-bottom .2s ease;
+  -ms-transition: border-bottom .2s ease;
+  -o-transition: border-bottom .2s ease;
+  display: block;
 }
+
+.topnav:hover {
+  border-bottom: 8px solid goldenrod;
+}
+
+.topnav-container{
+ opacity: 1;
+ visibility: visible;
+  width: 100%;
+  height: 60px;
+  display: block;
+  position: fixed;
+  top: 10px;
+  right: 4%;
+}
+
 
 /* Style the topnav links */
 .topnav a.nav {
@@ -69,97 +145,134 @@ body {
   color: #fff;
   height: 63px;
   text-align: center;
-  padding: 25px 3%;
+  padding: 1.1rem 0;
   text-decoration: none;
   font-size: 1rem;
+  width: 88px;
 }
-
-.active {
-  background-color: #abb0b3;
-}
-
 
 /* Change color on hover */
 .topnav a.nav:hover {
-  background-color: #abb0b3;
   color: white;
-
   opacity: 0.8;
   filter: alpha(opacity=100);
   /* For IE8 and earlier */
-
 }
 
-/* .landingcontainer {
-  margin-top: 20%;
-} */
+.hero-background {
+  position: relative;
+  padding: 50px 0;
+  z-index: 5;
+}
+
+/* HERO BACKGROUND OVERLAY */
+.overlay {
+  padding: 650px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn-outline-warning {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  background: transparent;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  color: #ffc107;
+  background-image: none;
+  border-color: #ffc107;
+}
+.btn-outline-warning:hover {
+  color: #fff;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+.btn-outline-warning:focus,
+.btn-outline-warning.focus {
+  box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
+}
+.btn-outline-warning:active,
+.btn-outline-warning.active {
+  color: #fff;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
 
 .bg {
-  /* The image used */
-  margin-top: 63px;
-  background-image: url(images/homepage.jpg);
-  /* Full height */
+  background-image: url(../images/homepage.jpg);
   width: 100%;
-  height: 500px;
-  background-position: center;
+  height: 650px;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* margin-top: 4.5%; */
+  clip-path: polygon(0 0, 100% 0, 100% 93vh, 0 100%);
+  position: relative;
+  overflow: hidden;
 }
 
-#p1 {
+.hero-text {
   text-align: center;
-}
-
-.button1 {
-  background-color: #555;
-  border: none;
-  color: white;
-  padding: 15px 20px;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
   position: absolute;
-  top: 45%;
-  border-radius: 50pc;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: white;
-  opacity: 0.8;
-  filter: alpha(opacity=50);
-  /* For IE8 and earlier */
-  width: auto;
-  text-align: center;
-  color: white;
-  text-shadow: 0px 4px 3px red,
-    0px 8px 13px orange,
-    0px 18px 23px yellow;
+  -o-transform: translate(-50%, -50%);
 }
 
+.hero-text {
+  font-size: 2.5rem;
+  width: 100%;
+}
 
+.hero-text span {
+  display: block;
+  color: white;
+  margin-bottom: 15px;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
+}
 
-.button1:hover {
-  background-color: #555;
-  opacity: 1.0;
-  filter: alpha(opacity=100);
-  /* For IE8 and earlier */
+.hero-text button {
+  background: transparent;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.hero-text button a {
+  text-decoration: none;
+}
+
+.down-arrow,
+.down-arrow a {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 hr {
   width: 200px;
 }
 
-
-
-.center>h1 {
+.center > h1 {
   font-weight: 700;
   font-size: 5em;
 }
-
-
-
 
 /*
 .item1 { grid-area: About; }
@@ -167,33 +280,35 @@ hr {
 .item3 { grid-area: AboutW; }
 */
 
-
 /* section{
     padding-top: 100px;
     
 } */
-
 
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-gap: 10px;
   padding: 10px;
-
 }
 
-.grid-container>div {
+.menu-heading{
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container > div {
   background-color: #f1f1f1;
   text-align: center;
   padding: 20px;
-
 }
-@media(max-width: 730px) {
+@media (max-width: 730px) {
   .grid-container {
-grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
   }
 }
-@media(max-width: 600px) {
+@media (max-width: 600px) {
   .grid-container {
     display: block;
     width: 25rem;
@@ -204,12 +319,18 @@ grid-template-columns: auto auto;
 .content {
   background-color: white;
   padding: 10px;
+  position: relative;
+}
+
+.content button {
+  padding: 22px 0;
+  background: #de6c09;
+  font-size: 1.2rem;
 }
 
 .item1 {
   grid-column-start: 1;
   grid-column-end: 5;
-
 }
 
 .item2 {
@@ -217,21 +338,14 @@ grid-template-columns: auto auto;
 }
 
 .item3 {
-  grid-column: 2/span 3;
+  grid-column: 2 / span 3;
   grid-row: 2;
 }
 
-
-.item4 {
-
+/* .item4 {
   grid-column-start: 1;
   grid-column-end: 5;
-
-
-}
-
-
-
+} */
 
 .item9 {
   grid-column-start: 1;
@@ -274,7 +388,6 @@ main {
 }
 
 .footer {
-  /* position: fixed; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -289,14 +402,13 @@ main {
   filter: alpha(opacity=50);
   height: 3rem;
   /* For IE8 and earlier */
-
 }
 
 /* _____________________________________________________________________
 ___________CSS STYLING FOR THE MENU PAGE________________________________ */
 
 .oslo-section {
-  font-family: 'Maven Pro', sans-serif;
+  font-family: "Maven Pro", sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.3;
@@ -316,9 +428,8 @@ ___________CSS STYLING FOR THE MENU PAGE________________________________ */
   width: 140px;
   height: 4px;
   padding: 0 0 3px 0;
-  margin: 10px auto
+  margin: 10px auto;
 }
-
 
 .project {
   display: block;
@@ -327,7 +438,6 @@ ___________CSS STYLING FOR THE MENU PAGE________________________________ */
   margin: 1em 0;
   cursor: pointer;
 }
-
 
 figure {
   margin: 0;
@@ -343,7 +453,7 @@ figure {
 
 .project figcaption {
   padding: 1em;
-  background: #966116;
+  background: #de6c09;
   color: #fff;
   text-align: center;
 }
@@ -355,24 +465,59 @@ figure {
 }
 
 .cta {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .cta:after {
-  content: " N"attr(value) "";
+  content: " N" attr(value) "";
   /* display: inline-flex;
   margin: 0 0 .5em .5em; */
+}
+
+.btn-outline-light {
+  padding: 0.2rem 1rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  background: transparent;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  color: #f8f9fa;
+  background-image: none;
+  border-color: #f8f9fa;
+}
+.btn-outline-light:hover {
+  color: #de6c09;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.btn-outline-light:focus,
+.btn-outline-light.focus {
+  box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
+}
+.btn-outline-light:active,
+.btn-outline-light.active,
+.show {
+  color: #fff;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
 }
 
 /* .cta:hover{
   background: red;
 } */
-button {
-  background: #966116;
+.other-team button,
+.btn {
+  background: #de6c09;
   color: #fff;
   border: none;
   position: relative;
-  height: 30px;
+  /* height: 30px; */
   font-size: 1.2rem;
   padding: 0 2em;
   /* width: 70%; */
@@ -382,37 +527,12 @@ button {
   border-radius: 8px;
 }
 
-button:hover {
+.btn:hover {
   background: #fff;
   color: #966116;
 }
 
-/* button:before,button:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #1AAB8A;
-  transition:400ms ease all;
-} */
-/* button:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-} */
-/* button:hover:before,button:hover:after{
-  width:100%;
-  transition:800ms ease all;
-} */
-/*
-
-When the browser is 960px or larger.
-
-*/
-
+/*When the browser is 960px or larger.*/
 @media screen and (min-width: 960px) {
   .oslo-wrapper {
     max-width: 1000px;
@@ -471,17 +591,17 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
   margin: 0 2% 2% 0;
   overflow: hidden;
 }
-#about-oslo{
+#about-oslo {
   max-width: 100%;
   margin: auto;
 }
 
-@media(max-width: 800px) {
+@media (max-width: 800px) {
   #oslo-img {
     float: none;
     width: 80%;
   }
-  #about-oslo{
+  #about-oslo {
     max-width: 80%;
     margin: auto;
   }
@@ -511,7 +631,6 @@ section.dev {
   overflow: hidden;
   border-radius: 5%;
   box-shadow: 0px 2px 1px 0px lightblue;
-
 }
 
 .dev:hover {
@@ -561,26 +680,23 @@ div .descr .name {
 .title,
 #oslo-img {
   border: 15px solid rgba(128, 128, 128, 0.1);
-    /* margin: auto; */
-    max-height: 385px;
+  /* margin: auto; */
+  max-height: 385px;
 }
 
-
-@media(max-width: 790px) {
+@media (max-width: 790px) {
   .title,
   #oslo-img {
     margin: auto;
   }
 }
 
-
-.send-to-team-url{
+.send-to-team-url {
   text-align: center;
   margin: 30px;
 }
-button.border-url:hover{
+button.border-url:hover {
   border: 1px solid#966116;
-  
 }
 
 /* ____________________________________________________________________________
@@ -589,30 +705,23 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
 .cont-bg {
   /* The image used */
   /* margin-top: 63px; */
-  background-image: url(./images/wall2.png);
+  background-image: url(../images/wall2.png);
   /* Full height */
   width: 100%;
-  height: 500px;
+  height: 650px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
+  overflow: hidden;
 }
 
-#intro{
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  font-size: 4em;
-  font-variant: small-caps;
-  color: white;
-}
-
-#contact-heading{
+#contact-heading {
   text-align: center;
   color: orangered;
 }
 
-#contact-heading hr{
+#contact-heading hr {
   background: orangered;
   width: 140px;
   height: 4px;
@@ -620,18 +729,21 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   margin: 10px auto;
 }
 
-#contact{
+#contact {
   max-width: 100%;
   margin: 4rem;
 }
 
-#contact-form{
+#contact p {
+line-height: 23px;
+}
+
+#contact-form {
   width: 60%;
   padding: 5% 0 5% 10%;
   display: inline-block;
-  
 }
-#contact-form form input{
+#contact-form form input {
   width: 100%;
   padding: 12px 20px;
   margin: 2% 0;
@@ -654,11 +766,43 @@ textarea {
   color: orangered;
 }
 
-#contact-form form button{
-  background-color: orangered;
-}
+#contact-form form button {
+    padding: 0.4rem 1.2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+    background: transparent;
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+      box-shadow 0.15s ease-in-out;
+    color: #de6c09;
+    background-image: none;
+    border-color: #de6c09;
+  }
+  #contact-form form button:hover {
+    color: #fff;
+    background-color: #de6c09;
+    border-color: #de6c09
+  }
+  #contact-form form button:focus{
+    box-shadow: 0 0 0 3px #de6c09;
+  }
+  #contact-form form button:active{
+    color: #fff;
+    background-color: #de6c09;
+    border-color:#de6c09
+  }
 
-#contact-address{
+#contact-address {
   /* position: absolute; */
   display: inline-block;
   left: 40%;
@@ -666,68 +810,61 @@ textarea {
   padding: 0 5%;
 }
 
-#contact-address a{
+#contact-address a {
   font-weight: bold;
 }
 
-@media(max-width: 750px) {
-  
-  #contact-form{
+@media (max-width: 750px) {
+  #contact-form {
     width: 80%;
     padding: 0;
     margin: auto;
     display: block;
-    
   }
 
-  #contact-address{
+  #contact-address {
     display: block;
     width: 55%;
     margin: auto;
   }
 
-  #intro{
-    left: 10%;
+  .topnav-container{
+    display: none;
   }
+
 }
-
-
 
 /* ________________________________________________________________________
 _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
-.fqcontainer{
+.fqcontainer {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.fqcontainer h2{
+.fqcontainer h2 {
   font-size: 1.5em;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.fqcontainer p{
+.fqcontainer p {
   font-size: 1.2em;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.fqcontainer p a{
+.fqcontainer p a {
   font-style: oblique;
   background: black;
   color: orangered;
   font-size: 1em;
 }
 
-
-@media(max-width: 750px) {
-.youtube{
-  max-width: 400px;
-}
+@media (max-width: 750px) {
+  .youtube {
+    max-width: 400px;
+  }
 }
 
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
-
-
-
