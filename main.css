@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   height: 100%;
@@ -94,6 +96,7 @@ body {
 
 .bg {
   /* The image used */
+  margin-top: 63px;
   background-image: url(images/homepage.jpg);
   /* Full height */
   width: 100%;
@@ -198,9 +201,6 @@ grid-template-columns: auto auto;
   }
 }
 
-
-
-
 .content {
   background-color: white;
   padding: 10px;
@@ -268,8 +268,6 @@ div.desc {
   padding: 15px;
   text-align: center;
 }
-
-
 
 main {
   margin-top: 10rem;
@@ -575,11 +573,22 @@ div .descr .name {
   }
 }
 
+
+.send-to-team-url{
+  text-align: center;
+  margin: 30px;
+}
+button.border-url:hover{
+  border: 1px solid#966116;
+  
+}
+
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE CONTACT US PAGE___________________________ */
 
 .cont-bg {
   /* The image used */
+  /* margin-top: 63px; */
   background-image: url(./images/wall2.png);
   /* Full height */
   width: 100%;
@@ -613,6 +622,7 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
 
 #contact{
   max-width: 100%;
+  margin: 4rem;
 }
 
 #contact-form{
@@ -715,3 +725,9 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
   max-width: 400px;
 }
 }
+
+/* ____________________________________________________________________________
+__________________CSS STYLING FOR THE TEAM PAGE___________________________ */
+
+
+

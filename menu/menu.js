@@ -3,6 +3,11 @@ var cta = document.querySelectorAll(".cta");
 var backDrop =document.querySelector(".backdrop");
 var emailForm =document.querySelector(".modal");
 var totalBill;
+
+backDrop.addEventListener("click", ()=>{
+    confirm("You are about to close you transaction")
+    window.location.reload(true);
+})
 //to get the cost of each item when you click the oder button
 for (var i = 0; i < cta.length; i++) {
     cta[i].addEventListener("click", (foo) => {
