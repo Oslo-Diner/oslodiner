@@ -22,9 +22,13 @@
   position: fixed;
   top: 0.4rem;
   right: 0.6rem;
-  background-image: radial-gradient(#de6c09, #de6c09);
+  background: #de6c09;
   z-index: 1;
-  transition: all 0.8s ease;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 .navigation__nav {
   height: 100vh;
@@ -34,7 +38,11 @@
   z-index: 2;
   opacity: 0;
   width: 0;
-  transition: all 0.7s ease-in;
+  transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
 }
 .navigation__list {
   text-align: center;
@@ -44,11 +52,13 @@
   transform: translate(-50%, -50%);
   list-style: none;
   text-transform: capitalize;
+  width: 90%;
 }
 
 .navigation__item {
   width: 100% !important;
-  margin: 1rem;
+  margin: 1rem -10px;
+  margin-right: 0;
 }
 .navigation__link:link,
 .navigation__link:visited {
@@ -65,13 +75,18 @@
   background: white;
   background-position: 100%;
 }
+
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
 }
 .navigation__checkbox:checked ~ .navigation__background {
-  transition: all 0.7s ease-in;
+  transition: all 0.2s ease-in;
   transform: scale(80);
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
 }
 .navigation__icon {
   position: relative;
@@ -116,10 +131,4 @@
 .navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
   transform: rotate(-30deg);
   top: 0;
-}
-
-@media (min-width: 750px) {
-  .navigation {
-    display: none;
-  }
 }

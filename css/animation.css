@@ -40,17 +40,6 @@
  -o-transition: margin-top .1s ease-in;
 }
 
-/* .topnav a.active {
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
-
-} */
-
-
-
 .topnav a.active {
   display: inline-block;
   vertical-align: middle;
@@ -84,14 +73,6 @@
   -webkit-transform: translateY(0);
   transform: translateY(0)
 }
-
-
-
-
-
-
-
-
 
 
 

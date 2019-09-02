@@ -1,0 +1,116 @@
+ /*When the browser is 960px or larger.*/
+@media screen and (min-width: 960px) {
+  .oslo-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .oslo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+  }
+
+  .project {
+    width: 100%;
+    height: 300px;
+    text-decoration: none;
+    margin: 0;
+  }
+
+  .project figure {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .project figure img {
+    position: relative;
+    z-index: 2;
+    transition: transform 0.4s;
+  }
+
+  .project figure:hover img {
+    transform: translateY(-106px);
+  }
+
+  .project figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 5%;
+    height: 40%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  #oslo-img {
+    float: none;
+    width: 80%;
+  }
+  #about-oslo {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 830px) {
+  .modal input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 790px) {
+  .title,
+  #oslo-img {
+    margin: auto;
+  }
+}
+
+@media(max-width: 750px) {
+
+  #contact-form {
+    width: 80%;
+    padding: 0;
+    margin: auto;
+    display: block;
+  }
+
+  #contact-address {
+    display: block;
+    width: 55%;
+    margin: auto;
+  }
+
+  .topnav-container{
+    display: none;
+  }
+
+}
+
+@media(max-width: 750px) {
+  .youtube {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 730px) {
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-container {
+   grid-auto-flow: row;
+   display: block;
+ 
+  }
+}
+
+@media (min-width: 750px) {
+  .navigation {
+    display: none;
+  }
+}

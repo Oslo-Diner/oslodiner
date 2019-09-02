@@ -89,11 +89,14 @@ body {
 }
 
 .modal input {
-  padding: 0.45rem 0.5rem;
+  padding: 0.7rem 0.5rem;
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
+  box-shadow: 2px 4px 5px .1px gainsboro;
   width: 60%;
+  outline: none;
+  border: none;
 }
 
 /*down to this line*/
@@ -238,9 +241,8 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-}
-
-.hero-text {
+  padding-left: 25px;
+  padding-right: 25px;
   font-size: 2.5rem;
   width: 100%;
 }
@@ -314,20 +316,6 @@ hr {
   background-color: #f1f1f1;
   text-align: center;
   padding: 20px;
-}
-
-@media (max-width: 730px) {
-  .grid-container {
-    grid-template-columns: auto auto;
-  }
-}
-
-@media (max-width: 600px) {
-  .grid-container {
-   grid-auto-flow: row;
-   display: block;
- 
-  }
 }
 
 .content {
@@ -542,51 +530,7 @@ figure {
   color: #966116;
 }
 
-/*When the browser is 960px or larger.*/
-@media screen and (min-width: 960px) {
-  .oslo-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 30px;
-  }
 
-  .oslo-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1em;
-  }
-
-  .project {
-    width: 100%;
-    height: 300px;
-    text-decoration: none;
-    margin: 0;
-  }
-
-  .project figure {
-    position: relative;
-    overflow: hidden;
-  }
-
-  .project figure img {
-    position: relative;
-    z-index: 2;
-    transition: transform 0.4s;
-  }
-
-  .project figure:hover img {
-    transform: translateY(-106px);
-  }
-
-  .project figcaption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 5%;
-    height: 40%;
-    width: 100%;
-  }
-}
 
 /* _____________________________________________________________________________________________________________________
 ___________________CSS STYLING FOR ABOUT PAGE___________________________________________________________ */
@@ -606,16 +550,6 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
   margin: auto;
 }
 
-@media (max-width: 800px) {
-  #oslo-img {
-    float: none;
-    width: 80%;
-  }
-  #about-oslo {
-    max-width: 80%;
-    margin: auto;
-  }
-}
 
 #oslo-img img {
   width: 100%;
@@ -695,13 +629,6 @@ div .descr .name {
   max-height: 385px;
 }
 
-@media (max-width: 790px) {
-  .title,
-  #oslo-img {
-    margin: auto;
-  }
-}
-
 .send-to-team-url {
   text-align: center;
   margin: 30px;
@@ -714,10 +641,8 @@ button.border-url:hover {
 __________________CSS STYLING FOR THE CONTACT US PAGE___________________________ */
 
 .cont-bg {
-  /* The image used */
-  /* margin-top: 63px; */
+  
   background-image: url(../images/wall2.png);
-  /* Full height */
   width: 100%;
   height: 650px;
   background-position: center;
@@ -725,6 +650,7 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   background-size: cover;
   clip-path: polygon(0 0, 100% 0, 100% 95vh, 0 100%);
   overflow: hidden;
+  position: relative;
 }
 
 #contact-heading {
@@ -754,6 +680,7 @@ line-height: 23px;
   padding: 5% 0 5% 10%;
   display: inline-block;
 }
+
 #contact-form form input {
   width: 100%;
   padding: 12px 20px;
@@ -825,26 +752,7 @@ textarea {
   font-weight: bold;
 }
 
-@media(max-width: 750px) {
 
-  #contact-form {
-    width: 80%;
-    padding: 0;
-    margin: auto;
-    display: block;
-  }
-
-  #contact-address {
-    display: block;
-    width: 55%;
-    margin: auto;
-  }
-
-  #intro {
-    left: 10%;
-  }
-
-}
 
 /* ________________________________________________________________________
 _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
@@ -872,12 +780,6 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
   font-size: 1em;
 }
 
-
-@media(max-width: 750px) {
-  .youtube {
-    max-width: 400px;
-  }
-}
 
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
