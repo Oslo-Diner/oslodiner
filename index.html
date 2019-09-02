@@ -2,81 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="team_oslo">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Oslo Diner</title>
-    <link rel="icon" href="images/oslo_icon.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="team_oslo">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oslo Diner</title>
+  <link rel="icon" href="images/oslo_icon.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/toggle.css">
 
 </head>
 
 <body>
 
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html"><img src="images/oslo_logo.png" href="index.html" alt="oslo logo"></a>
-            <a href="./contact/contact.html" class=" nav">Contact Us</a>
-            <a href="./menu/menu.html" class="nav">Menu</a>
-            <a href="./about/about.html#team" class="nav">Team</a>
-            <a href="./about/about.html" class="nav">About Us</a>
-            <a href="" class="active nav">Home</a>
-        </div>
+  <header>
 
-    </header>
+    <div class="topnav" id="myTopnav">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                Home
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./about/about.html" class="navigation__link">
+                About Us
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./about/about.html#team" class="navigation__link">
+                Team
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./menu/menu.html" class="navigation__link">
+                Menu
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./contact/contact.html" class="navigation__link">
+                Contact Us
+              </a>
+            </li </ul> </nav> </div> <div class="nav-container">
+            <a href="index.html"><img src="./images/oslo_logo.png" alt="oslo logo"></a>
+            <div class="topnav-container">
+              <a href="./contact/contact.html" class="nav">Contact Us</a>
+              <a href="./menu/menu.html" class="nav">Menu</a>
+              <a href="./about/about.html#team" class="nav">Team</a>
+              <a href="./about/about.html" class="nav">About Us</a>
+              <a href="" class="active nav">Home</a>
+            </div>
 
-
-    <span class="landingcontainer">
-        <div id="#home" class="bg"></div>
-        <p id="p1">
-            <a href="menu/menu.html" class="button1">Welcome to Oslo Diner</a>
-        </p>
-    </span>
-
-    <div style="text-align: center;" class="video">
-        <iframe class="youtube"width="560" height="315" src="https://www.youtube.com/embed/hAPqHrB_FOg" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-            alt="Introductory Video"></iframe>
+      </div>
     </div>
 
-    <section>
-        <div class="grid-container">
-            <div class="item4">Menu
-                <hr>
-            </div>
-            <div class="item5">
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
-            </div>
+  </header>
 
 
-            <div class="item6">
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
-            </div>
+  <div class="hero-background">
+    <div id="#home" class="bg">
+      <div class="overlay">
+        <h1 class="hero-text">
+          <span class="message">Welcome to Oslo Diner</span>
+          <button class="" role="button">
+            <a href="menu/menu.html" class="btn-outline-warning">Browse Menu</a>
+          </button>
+          <span class="down-arrow">
+            <a href="#menu">&DoubleDownArrow;</a>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
 
-            <div>
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
-            </div>
+  <div style="text-align: center;" class="video">
+    <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/hAPqHrB_FOg" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+      alt="Introductory Video"></iframe>
+  </div>
 
-            <div class="item8">
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
-            </div>
+  <section id="menu">
+    <h1 class="menu-heading">Menu
+      <hr>
+    </h1>
+    <div class="grid-container">
+      <div class="item5">
+        <div class="content">
+          <img src="images/aboutusdish.jpg">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
 
 
-            <!-- <div class="item9">Team<hr></div>
+      <div class="item6">
+        <div class="content">
+          <img src="images/aboutusdish.jpg">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="content">
+          <img src="images/aboutusdish.jpg">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
+
+      <div class="item8">
+        <div class="content">
+          <img src="images/aboutusdish.jpg">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
+
+
+      <!-- <div class="item9">Team<hr></div>
                     <div class="item10">
                         <div class="content">
                             <img src="images/avatar2.png" alt="Avatar" class="avatar">
@@ -132,17 +181,14 @@
                 </div> -->
 
 
-        </div>
-
-    </section>
-
-
-
-
-    <div class="footer">
-        <p>&copy; team_oslo 2019</p>
     </div>
-    <script src="main.js"></script>
+
+  </section>
+
+  <div class="footer">
+    <p>&copy; <small>team_oslo 2019</small></p>
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>

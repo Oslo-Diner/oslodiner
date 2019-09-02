@@ -1,0 +1,125 @@
+.navigation {
+  position: relative;
+  text-align: center;
+}
+.navigation__checkbox {
+  display: none;
+}
+.navigation__button {
+  background-color: white;
+  height: 4rem;
+  width: 4rem;
+  position: fixed;
+  top: 0.4rem;
+  right: 0.6rem;
+  border-radius: 50%;
+  z-index: 3;
+}
+.navigation__background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 0.4rem;
+  right: 0.6rem;
+  background-image: radial-gradient(#de6c09, #de6c09);
+  z-index: 1;
+  transition: all 0.8s ease;
+}
+.navigation__nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  opacity: 0;
+  width: 0;
+  transition: all 0.7s ease-in;
+}
+.navigation__list {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.navigation__item {
+  width: 100% !important;
+  margin: 1rem;
+}
+.navigation__link:link,
+.navigation__link:visited {
+  font-size: 1.6rem;
+  color: #f7f7f7;
+  padding: 1rem 2rem;
+  font-weight: 300;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.navigation__link:hover,
+.navigation__link:active {
+  color: #de6c09;
+  background: white;
+  background-position: 100%;
+}
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+}
+.navigation__checkbox:checked ~ .navigation__background {
+  transition: all 0.7s ease-in;
+  transform: scale(80);
+}
+.navigation__icon {
+  position: relative;
+  top: 32px;
+  left: 18px;
+}
+.navigation__icon,
+.navigation__icon::before,
+.navigation__icon::after {
+  width: 1.5rem;
+  height: 2px;
+  background-color: black;
+  display: inline-block;
+  position: absolute;
+  transition: all 0.2s;
+}
+.navigation__icon::before,
+.navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.navigation__icon::before {
+  top: -0.8rem;
+}
+.navigation__icon::after {
+  top: 0.8rem;
+}
+.navigation__button:hover .navigation__icon:before {
+  top: -1rem;
+}
+.navigation__button:hover .navigation__icon:after {
+  top: 1rem;
+}
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon {
+  background: transparent;
+}
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon::before {
+  transform: rotate(30deg);
+  top: 0;
+}
+.navigation__checkbox:checked ~ .navigation__button .navigation__icon::after {
+  transform: rotate(-30deg);
+  top: 0;
+}
+
+@media (min-width: 750px) {
+  .navigation {
+    display: none;
+  }
+}

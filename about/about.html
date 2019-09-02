@@ -3,67 +3,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Who we are</title>
-    <link rel="icon" href="../images/oslo_icon.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="../main.css">
-    <!-- <script src="main.js"></script> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Who we are</title>
+  <link rel="icon" href="../images/oslo_icon.png" type="image/gif" sizes="16x16" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="../css/animation.css" />
+  <link rel="stylesheet" href="../css/toggle.css" />
+  <!-- <script src="main.js"></script> -->
 </head>
 
 <body>
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="../index.html"><img src="../images/oslo_logo.png" href="../index.html" alt="oslo logo"></a>
-            <a href="../contact/contact.html" class=" nav">Contact Us</a>
-            <a href="../menu/menu.html" class="nav">Menu</a>
-            <a href="about.html#team" class="nav">Team</a>
-            <a href="#" class="nav active">About Us</a>
-            <a href="../index.html" class="nav">Home</a>
+  <header>
+
+    <div class="topnav" id="myTopnav">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="../index.html" class="navigation__link">
+                Home
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="about/about.html" class="navigation__link">
+                About Us
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="about/about.html#team" class="navigation__link">
+                Team
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="../menu/menu.html" class="navigation__link">
+                Menu
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="../contact/contact.html" class="navigation__link">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nav-container">
+        <a href="../index.html"><img src="../images/oslo_logo.png" alt="oslo logo"></a>
+        <div class="topnav-container">
+          <a href="../contact/contact.html" class=" nav">Contact Us</a>
+          <a href="../menu/menu.html" class="nav">Menu</a>
+          <a href="about.html#team" class="nav">Team</a>
+          <a href="about.html" class="active nav">About Us</a>
+          <a href="../index.html" class="nav">Home</a>
         </div>
+      </div>
+    </div>
 
-    </header>
-    <main>
-        <div id="aboutus">
-            <header style="text-align:center;" class="title">
-                <h1>About Us</h1>
-            </header>
-            <section>
-                <article id="oslo-img">
-                    <img src="../images/Shop.png" alt="">
-                </article>
-            </section>
-            <section id="about-oslo">
-                <article>
-                    <p>
-                        Oslo Diner is a hypothetical restaurant brand of the HNG internship located in the heart of
-                        mainland Lagos. We operate a unique system that allows you to book reservations and meals in
-                        advance up to as little as one hour before your arrival and be served immediately you arrive.
-                    </p>
+  </header>
+  <main>
+    <div id="aboutus">
+      <header style="text-align:center;" class="title">
+        <h1>About Us</h1>
+      </header>
+      <section>
+        <article id="oslo-img">
+          <img src="../images/Shop.png" alt="" />
+        </article>
+      </section>
+      <section id="about-oslo">
+        <article>
+          <p>
+            Oslo Diner is a hypothetical restaurant brand of the HNG
+            internship located in the heart of mainland Lagos. We operate a
+            unique system that allows you to book reservations and meals in
+            advance up to as little as one hour before your arrival and be
+            served immediately you arrive.
+          </p>
 
-                    <p>
-                        Our menu covers a vast array of local and continental recipes and is tailored to adapt to the
-                        ever dynamic taste of our customers. This means we have a flexible menu to accommodate the
-                        different desires of our customers at very affordable prices, because at Oslo Diner, your taste
-                        is our command.
-                    </p>
+          <p>
+            Our menu covers a vast array of local and continental recipes and
+            is tailored to adapt to the ever dynamic taste of our customers.
+            This means we have a flexible menu to accommodate the different
+            desires of our customers at very affordable prices, because at
+            Oslo Diner, your taste is our command.
+          </p>
 
-                    <p>
-                        Our 200 seater restaurant also doubles as an event center and we have the best event management
-                        and catering team on ground to make your dream event a reality. CLICK to book now.
-                    </p>
-                </article>
-            </section>
-            <section>
-
-            </section>
-        </div>
-        <div id="team">
-            <header style="text-align:center;" class="title">
-                <h1>Our Team</h1>
-            </header>
-            <!-- <section class="dev" title="08106243542, okorojesse@gmail.com">
+          <p>
+            Our 200 seater restaurant also doubles as an event center and we
+            have the best event management and catering team on ground to make
+            your dream event a reality. CLICK to book now.
+          </p>
+        </article>
+      </section>
+      <section></section>
+    </div>
+    <div id="team">
+      <header style="text-align:center;" class="title">
+        <h1>Our Team</h1>
+      </header>
+      <!-- <section class="dev" title="08106243542, okorojesse@gmail.com">
                     <div class="t-img">
                         <img src="images/essy.jpg" alt="">
                     </div>
@@ -96,74 +141,72 @@
                         </section>
                     </div>
                 </section> -->
-            <section>
-                <div class="grid-container">
-                    <div class="item10">
-                        <div class="content">
-                            <img src="../team/images/ebuka.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">General Ebuka. Team leader</div>
-                        </div>
-                    </div>
-                    <div class="item11">
-                        <div class="content">
-                            <img src="../team/images/GP.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">Gozie Prince</div>
-                        </div>
-                    </div>
-                    <div class="item12">
-                        <div class="content">
-                            <img src="../team/images/nma.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">Nma O.</div>
-                        </div>
-                    </div>
-                    <div class="item13">
-                        <div class="content">
-                            <img src="../team/images/bukky.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">Bukky</div>
-                        </div>
-                    </div>
+      <section>
+        <div class="grid-container">
+          <div class="item10">
+            <div class="content">
+              <img src="../team/images/ebuka.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">General Ebuka. Team leader</div>
+            </div>
+          </div>
+          <div class="item11">
+            <div class="content">
+              <img src="../team/images/GP.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">Gozie Prince</div>
+            </div>
+          </div>
+          <div class="item12">
+            <div class="content">
+              <img src="../team/images/nma.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">Nma O.</div>
+            </div>
+          </div>
+          <div class="item13">
+            <div class="content">
+              <img src="../team/images/bukky.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">Bukky</div>
+            </div>
+          </div>
 
-                    <div class="item115">
-                        <div class="content">
-                            <img src="../team/images/jesmanto.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">Jesmanto</div>
-                        </div>
-                    </div>
+          <div class="item115">
+            <div class="content">
+              <img src="../team/images/jesmanto.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">Jesmanto</div>
+            </div>
+          </div>
 
-                    <div class="item16">
-                        <div class="content">
-                            <img src="../team/images/ibefx.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">IbeFx</div>
-                        </div>
-                    </div>
+          <div class="item16">
+            <div class="content">
+              <img src="../team/images/ibefx.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">IbeFx</div>
+            </div>
+          </div>
 
+          <div class="item17">
+            <div class="content">
+              <img src="../team/images/keedman.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">Keedman</div>
+            </div>
+          </div>
 
-                    <div class="item17">
-                        <div class="content">
-                            <img src="../team/images/keedman.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">Keedman</div>
-                        </div>
-                    </div>
-
-                    <div class="item18">
-                        <div class="content">
-                            <img src="../team/images/olu.JPG" alt="Avatar" class="avatar">
-                            <div class="desc">Olu</div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </section>
+          <div class="item18">
+            <div class="content">
+              <img src="../team/images/olu.JPG" alt="Avatar" class="avatar" />
+              <div class="desc">Olu</div>
+            </div>
+          </div>
         </div>
-        <div class="send-to-team-url">
-            <a href="../team/team.html"><button class="border-url" style="height: 70px;">Meet The Rest of The Team</button></a>
-        </div>
-    </main>
-    <div class="footer">
-        <p>&copy; team_oslo 2019</p>
+      </section>
     </div>
+    <div class="send-to-team-url other-team">
+      <a href="../team/team.html"><button class="border-url" style="height: 70px;">
+          Meet The Rest of The Team
+        </button></a>
+    </div>
+  </main>
+  <div class="footer">
+    <p>&copy; <small>team_oslo 2019</small></p>
+  </div>
 </body>
 
 </html>
