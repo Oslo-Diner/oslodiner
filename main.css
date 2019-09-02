@@ -193,7 +193,7 @@ grid-template-columns: auto auto;
 @media(max-width: 600px) {
   .grid-container {
     display: block;
-    width: 25rem;
+    width: 20rem;
     margin: auto;
   }
 }
@@ -574,3 +574,8 @@ div .descr .name {
   }
 }
 
+@media(max-width:400px){
+  .title{
+    margin-top: 70px !important;
+  }
+}
