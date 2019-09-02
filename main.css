@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -188,11 +189,13 @@ hr {
   padding: 20px;
 
 }
+
 @media(max-width: 730px) {
   .grid-container {
-grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
   }
 }
+
 @media(max-width: 600px) {
   .grid-container {
     display: block;
@@ -471,7 +474,8 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
   margin: 0 2% 2% 0;
   overflow: hidden;
 }
-#about-oslo{
+
+#about-oslo {
   max-width: 100%;
   margin: auto;
 }
@@ -481,7 +485,8 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
     float: none;
     width: 80%;
   }
-  #about-oslo{
+
+  #about-oslo {
     max-width: 80%;
     margin: auto;
   }
@@ -500,6 +505,7 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
   max-width: 1200px;
   margin: 0 auto;
   clear: both;
+  padding-top: 64px;
 }
 
 section.dev {
@@ -561,12 +567,13 @@ div .descr .name {
 .title,
 #oslo-img {
   border: 15px solid rgba(128, 128, 128, 0.1);
-    /* margin: auto; */
-    max-height: 385px;
+  /* margin: auto; */
+  max-height: 385px;
 }
 
 
 @media(max-width: 790px) {
+
   .title,
   #oslo-img {
     margin: auto;
@@ -574,13 +581,14 @@ div .descr .name {
 }
 
 
-.send-to-team-url{
+.send-to-team-url {
   text-align: center;
   margin: 30px;
 }
-button.border-url:hover{
+
+button.border-url:hover {
   border: 1px solid#966116;
-  
+
 }
 
 /* ____________________________________________________________________________
@@ -598,7 +606,7 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   background-size: cover;
 }
 
-#intro{
+#intro {
   position: absolute;
   top: 30%;
   left: 40%;
@@ -607,12 +615,12 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   color: white;
 }
 
-#contact-heading{
+#contact-heading {
   text-align: center;
   color: orangered;
 }
 
-#contact-heading hr{
+#contact-heading hr {
   background: orangered;
   width: 140px;
   height: 4px;
@@ -620,18 +628,19 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
   margin: 10px auto;
 }
 
-#contact{
+#contact {
   max-width: 100%;
   margin: 4rem;
 }
 
-#contact-form{
+#contact-form {
   width: 60%;
   padding: 5% 0 5% 10%;
   display: inline-block;
-  
+
 }
-#contact-form form input{
+
+#contact-form form input {
   width: 100%;
   padding: 12px 20px;
   margin: 2% 0;
@@ -654,11 +663,11 @@ textarea {
   color: orangered;
 }
 
-#contact-form form button{
+#contact-form form button {
   background-color: orangered;
 }
 
-#contact-address{
+#contact-address {
   /* position: absolute; */
   display: inline-block;
   left: 40%;
@@ -666,27 +675,27 @@ textarea {
   padding: 0 5%;
 }
 
-#contact-address a{
+#contact-address a {
   font-weight: bold;
 }
 
 @media(max-width: 750px) {
-  
-  #contact-form{
+
+  #contact-form {
     width: 80%;
     padding: 0;
     margin: auto;
     display: block;
-    
+
   }
 
-  #contact-address{
+  #contact-address {
     display: block;
     width: 55%;
     margin: auto;
   }
 
-  #intro{
+  #intro {
     left: 10%;
   }
 }
@@ -696,23 +705,23 @@ textarea {
 /* ________________________________________________________________________
 _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
-.fqcontainer{
+.fqcontainer {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
-.fqcontainer h2{
+.fqcontainer h2 {
   font-size: 1.5em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.fqcontainer p{
+.fqcontainer p {
   font-size: 1.2em;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.fqcontainer p a{
+.fqcontainer p a {
   font-style: oblique;
   background: black;
   color: orangered;
@@ -721,13 +730,84 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
 
 @media(max-width: 750px) {
-.youtube{
-  max-width: 400px;
-}
+  .youtube {
+    max-width: 400px;
+  }
 }
 
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
+.team-bg{
+  background-image: url(./images/Shop.png);
+  width: 100%;
+  display: flex;
+  margin-top: 63px;
+  height: 70vh;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.team-main{
+margin-top: 5rem;
+}
 
+#overlay {
+  position: absolute;
+    width: 100%;
+    height: 70vh;
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    background-color: rgba(0,0,0,0.5);
+    /* z-index: 2; */
+    cursor: pointer;
+    overflow: hidden;
+}
+.team-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* width: 800px; */
+  /* border: 1px solid gray; */
+  padding: 8px;
+  flex-wrap: wrap;
+}
 
+.team-item {
+  /* border: 1px solid gray; */
+  padding: 4px;
+  /* background: #A4F2D8; */
+  font-family: verdana;
+  font-size: 19px;
+  text-align: center;
+  /* color: gray; */
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.team-img{
+  background: url(./team/images/Udeme_Chris.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 70%;
+  height: 70%;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 50%;
+  border: #d1af5f solid 0.5rem;
+}
+
+.team-des p{
+  margin: 0;
+}
+
+.team-item .team-item-1{
+  background-image: url(./team/images/Agbo\ Monica.png);
+}
