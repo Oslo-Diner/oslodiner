@@ -136,7 +136,7 @@ body {
 .topnav-container{
  opacity: 1;
  visibility: visible;
-  width: 100%;
+  width: 70%;
   height: 60px;
   display: block;
   position: fixed;
@@ -170,15 +170,20 @@ body {
   position: relative;
   padding: 50px 0;
   z-index: 5;
-  width: 100vw;
+  /* width: 100vw; */
   max-width: 100vw;
   overflow: hidden;
 }
 
+@media(max-width: 750px){
+  .topnav-container{
+    display: none;
+  }
+}
 /* HERO BACKGROUND OVERLAY */
 .overlay {
   padding: 650px 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .btn-outline-warning {
@@ -265,6 +270,13 @@ body {
 
 .hero-text button a {
   text-decoration: none;
+}
+
+@media(max-width: 750px){
+  .hero-text span { 
+  max-width: 450px;
+  margin:  auto;
+  }
 }
 
 .down-arrow,
@@ -531,7 +543,6 @@ figure {
 }
 
 
-
 /* _____________________________________________________________________________________________________________________
 ___________________CSS STYLING FOR ABOUT PAGE___________________________________________________________ */
 
@@ -753,7 +764,6 @@ textarea {
 }
 
 
-
 /* ________________________________________________________________________
 _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
@@ -784,7 +794,7 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
 .team-bg{
-  background-image: url(../images/Shop.png);
+  background-image: url(../images/Shop1.png);
   width: 100%;
   height: 650px;
   background-position: center;
@@ -801,10 +811,15 @@ font-weight: 100;
 font-size: 1.3rem;
 }
 
+.team-header{
+  -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px white;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 3.5rem;
+}
 .team-main{
 margin-top: 5rem;
 }
-
 
 .team-container {
   display: flex;
