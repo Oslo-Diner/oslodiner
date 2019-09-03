@@ -871,15 +871,32 @@ textarea {
 /* ________________________________________________________________________
 _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
-.fqcontainer {
-  margin: 0;
-  padding: 0;
+header#banner{
+  max-width: 100%;
+  margin: 6% auto;
+  height: 300px;
+  border: 3px solid orangered;
+  background-color: orangered;
+  color: white;
   text-align: center;
+  font-size: 2rem;
+}
+
+header#banner h1{
+  margin-top: 10%;  
+}
+
+.fqcontainer {
+  width: 100%;
+  margin: 5rem auto;
+  padding: 0 10em;
+  text-align: justify;
 }
 
 .fqcontainer h2 {
   font-size: 1.5em;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 100%;
 }
 
 .fqcontainer p {
@@ -889,17 +906,77 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
 .fqcontainer p a {
   font-style: oblique;
-  background: black;
-  color: orangered;
+  /* background: black;
+  color: orangered; */
   font-size: 1em;
 }
 
+.question, .q-tag{
+  border-bottom: 2px solid orangered;
+  padding: 1%;
+}
+
+.q-tag{
+  color: white;
+  border: 2px solid orangered;
+  background-color: orangered;
+  font-weight: bolder;
+}
+
+.more{
+  border: 1px solid orangered;
+  background-color: orangered;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+.more a:link, .more a:visited, .more a:active{
+  text-decoration: none;
+  color:white;
+}
+
+.ans{
+  border-bottom: 2px solid rgba(219, 109, 6, 0.5);
+  background-color: rgba(219, 76, 20, 0.2);
+  max-width: 100%;
+  padding: 2%;
+  margin-bottom: 5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 @media(max-width: 750px) {
   .youtube {
     max-width: 400px;
   }
+  .ans{
+    max-width: 100%;
+    margin-bottom: 6%;
+  }
+
+  header#banner{
+    max-width: 100%;
+    margin: 6% 0 1% 0;
+    height: 200px;
+    border: 3px solid orangered;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  header#banner h1{
+    margin-top: 20%;  
+  }
+
+  .faq{
+    margin-bottom: 50px;  
+  }
+
+  .fqcontainer{
+    padding: 0 2%;
+  }
 }
+
+
 
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
