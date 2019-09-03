@@ -105,7 +105,10 @@
   .grid-container {
    grid-auto-flow: row;
    display: block;
- 
+  }
+
+  .hero-text span {
+    font-size: 2.6rem;
   }
 }
 
