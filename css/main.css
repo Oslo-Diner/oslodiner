@@ -1092,6 +1092,7 @@ __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
 button {
   cursor: pointer;
 }
+<<<<<<< HEAD
 
 /* comment stylling  */
 
@@ -1211,10 +1212,12 @@ h4 {
       2em 0;
   }
 
+=======
+>>>>>>> updatedHTML
 /*------------------This is line is for Desigining the landing page of each of the menu offered in the men page*/
 
 
-.menu-section{
+.menu-section {
   border: 1px solid white;
   min-height: 100vh;
   padding-top: 100px;
