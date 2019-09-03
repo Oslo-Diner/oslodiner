@@ -222,7 +222,7 @@ body {
 }
 
 .bg {
-  background-image: url(../images/homepage.jpg);
+  background-image: url(https://res.cloudinary.com/drwf1wdsc/image/upload/v1567499761/homepage_upuy47.jpg);
   max-width: 100%;
   height: 650px;
   background-position: center center;
@@ -377,9 +377,18 @@ hr {
 /* food pic */
 div.content img {
   width: 100%;
-  height: auto;
+  height: 300px;
 }
 
+@media (max-width: 600px){
+  div.content img {
+    width: 100%;
+    height: auto;
+  }
+  .grid-container > div {
+    margin: 0 30px;
+}
+}
 .Ordbutton {
   border: none;
   outline: 0;
@@ -728,7 +737,7 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
 .cont-bg {
   /* The image used */
   /* margin-top: 63px; */
-  background-image: url(../images/wall2.png);
+  background-image: url(https://res.cloudinary.com/drwf1wdsc/image/upload/v1567501262/wall2_s7urvq.png);
   /* Full height */
   width: 100%;
   height: 650px;
@@ -895,7 +904,9 @@ _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
 .team-bg{
-  background-image: url(../images/Shop1.png);
+  /* background-image: url(../images/Shop1.png); */
+  background-image: url(https://res.cloudinary.com/drwf1wdsc/image/upload/v1567501218/shop1_kpww76.png);
+
   width: 100%;
   display: flex;
   margin-top: 63px;
@@ -954,7 +965,7 @@ margin-top: 5rem;
 }
 
 .team-img{
-  background: url(./team/images/Udeme_Chris.png);
+  /* background: url(./team/images/Udeme_Chris.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
