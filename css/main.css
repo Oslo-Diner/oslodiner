@@ -952,7 +952,7 @@ margin-top: 5rem;
 }
 
 .team-item {
-  /* border: 1px solid gray; */
+  border: 2px solid orange;
   padding: 4px;
   /* background: #A4F2D8; */
   font-family: verdana;
@@ -979,6 +979,7 @@ margin-top: 5rem;
 
 .team-des p{
   margin: 0;
+  font-size: small;
 }
 
 .team-item .team-item-1{
