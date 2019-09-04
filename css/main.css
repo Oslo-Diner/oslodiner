@@ -1209,3 +1209,60 @@ h4 {
       1em 0,
       2em 0;
   }
+/*------------------This is line is for Desigining the landing page of each of the menu offered in the men page*/
+
+
+.menu-section{
+  border: 1px solid white;
+  min-height: 100vh;
+  padding-top: 100px;
+  margin: auto;
+  width: 600px;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+#menu-main-section{
+display: grid;
+grid-template-rows: 1fr 40%;
+grid-gap: 5px;
+border-radius: 4px;
+}
+#menu-main-section img{
+max-width: 100%;
+height:auto;
+}
+.cuisine{
+max-height: 900px;
+width: auto;
+justify-self: center;
+}
+.descrip{
+grid-template-rows: 100% 100%;
+}
+
+.descript{
+display: grid;
+}
+.descript h4{
+color: #DD6D0A;
+font-weight: bolder;
+text-transform: uppercase;
+font-family: "Baskerville";
+}
+.descript p{
+text-align: justify;
+}
+#foot-menu{
+ position: absolute;
+bottom: 0;
+width: 100%;
+height: 2.5rem;
+}
+
+.price h4{
+color: #DD6D0A;
+font-weight: bolder;
+text-transform: uppercase;
+font-family: "Baskerville";
+}
