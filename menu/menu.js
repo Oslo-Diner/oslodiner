@@ -1,28 +1,41 @@
-
+// store our data here
 var cta = document.querySelectorAll(".cta");
-var backDrop =document.querySelector(".backdrop");
-var emailForm =document.querySelector(".modal");
+var backDrop = document.querySelector(".backdrop");
+var emailForm = document.querySelector(".modal");
 var totalBill;
+var menuTitle = document.querySelectorAll('.meun_title');
 
-backDrop.addEventListener("click", ()=>{
+
+//backdrop event listener for exiting the payment
+backDrop.addEventListener("click", () => {
     confirm("You are about to close you transaction")
     window.location.reload(true);
-})
-//to get the cost of each item when you click the oder button
+});
+
+
+
+//to get the cost and menu name of each item when you click the oder button
 for (var i = 0; i < cta.length; i++) {
+    //this line of code grabs the item that was clicked. 
+    cta[i].index = i;
     cta[i].addEventListener("click", (foo) => {
-      var mainCost = foo.target.value;
-      //console.log(mainCost);
-      backDrop.style.display = "block";
-      emailForm.style.display = "block";
-      document.querySelector(".dispaly_bill").innerHTML = "Your bill is: ₦" + mainCost;
-      totalBill = mainCost ;
+        var menuNumber = foo.target.index;
+        //console.log(menuNumber)
+        //this linge grabs and saves the name of the meal that was ordered
+        var menuName = menuTitle[menuNumber].innerText;
+        //this linge grabs and saves the amount of the meal that was ordered
+        var mainCost = foo.target.value;
+        // popup the payment module
+        backDrop.style.display = "block";
+        emailForm.style.display = "block";
+        //pass the name of meal and amount to be paid
+        document.querySelector(".dispaly_bill").innerHTML = 'You are paying for ' + menuName + "<br> Your bill is: ₦" + mainCost;
+        // send out the cost for other functions to access. saves the value in line 4
+        totalBill = mainCost;
     });
 
 };
 
-//var main = mainCost;
-//console.log(mainBillCost);
 
 const API_publicKey = "FLWPUBK_TEST-71e80a403c78fcaa4b53d9768b574a87-X";
 
@@ -54,7 +67,7 @@ function payWithRave() {
                 // Redirect()
             },
             callback: function (response) {
-                var txref = response.tx.txRef; // collect txRef returned and pass to a 					server page to complete status check.
+                var txref = response.tx.txRef; // collect txRef returned and pass to a server page to complete status check.
                 console.log("This is the response returned after a charge", response);
                 if (
                     response.tx.chargeResponseCode == "00" ||
@@ -64,7 +77,7 @@ function payWithRave() {
                     redirectHome();
                     //document.write("thank you for shopping with us"); // redirect to a success page
                 } else {
-                    
+
                     alert("Transaction not successful\n Try Again");
                     window.location.reload(true);
                     // redirect to a failure page.

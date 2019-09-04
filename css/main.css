@@ -1062,3 +1062,7 @@ margin-top: 5rem;
 .team-item .team-item-1{
   background-image: url(./team/images/Agbo\ Monica.png);
 }
+
+button{
+  cursor: pointer;
+}
