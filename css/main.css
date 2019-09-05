@@ -1064,6 +1064,7 @@ __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
   width: 300px;
   height: 300px;
   margin: 10px;
+  position: relative;
 }
 
 .team-img {
@@ -1209,3 +1210,24 @@ h4 {
       1em 0,
       2em 0;
   }
+
+  /* this should fix the image of the team icons */
+  img[src="https://res.cloudinary.com/ibefx/image/upload/v1567706577/team%20images/icons8-profile-64_1_luc59p.png"]{
+    width: 40px;
+    transition-property: width;
+  transition-duration: 1s;
+  }
+
+  .team-des > p:nth-child(1){
+    font-weight: bold;
+  }
+  .team-des > p:nth-child(3){
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  img[src="https://res.cloudinary.com/ibefx/image/upload/v1567706577/team%20images/icons8-profile-64_1_luc59p.png"]:hover{
+    width: 60px; 
+  }
+ 
