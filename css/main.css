@@ -1067,9 +1067,13 @@ button{
   cursor: pointer;
 }
 
+/* comment stylling  */
 .comments{
   font-variant: normal;
-  font-size: 1.5em;
+  font-size: 1rem;
+  width: 75%;
+  margin: auto;
+  text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 .top-div{
@@ -1082,23 +1086,30 @@ button{
   width: 48%;
 }
 .div-pic img{
-  width: 100%;
+  width: 80%;
 }
 h2{
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 h4{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 500px) {
 
   .top-div{
-      display: flex;
-      flex-direction: column
+      display: block;
   }
   .div-text, .div-pic{
-      width: 100%;
+      width: 80%;
+      margin: auto;
+      text-align: center
   }
 
+}
+
+.top-div:nth-child(1), .top-div:nth-child(3){
+  background-color: #de6c09;
+    border-radius: 8px;
+    flex-direction: row-reverse;
 }
