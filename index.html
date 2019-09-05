@@ -1,143 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="team_oslo">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Oslo Diner</title>
-    <link rel="icon" href="images/oslo_icon.png" type="image/gif" sizes="16x16">
-    <link rel="stylesheet" href="main.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" Content="Oslo Diner is an affordable 200 seater resturant that doubles as an event center. The restaurant serves both local and continental dishes with our chefs from different parts of the world. Her doors are open to everyone and everyone leaves with a promise to always come back. You really can't stay away! Why not come down to Oslo Diner?">
+  <meta name="author" content="team_oslo">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oslo Diner</title>
+  <link rel="icon" href="https://res.cloudinary.com/jesmanto/image/upload/v1567521911/oslo_icon_yiwtei.png" type="image/gif" sizes="16x16">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/toggle.css">
 
 </head>
 
 <body>
 
-    <header>
-        <div class="topnav" id="myTopnav">
-            <a href="index.html"><img src="images/oslo_logo.png" href="index.html" alt="oslo logo"></a>
-            <a href="./menu/menu.html" class="nav">Menu</a>
-            <a href="./about/about.html#team" class="nav">Team</a>
-            <a href="./about/about.html" class="nav">About Us</a>
-            <a href="#home" class="active nav">Home</a>
-        </div>
+  <header>
 
-    </header>
-
-
-    <span class="landingcontainer">
-        <div id="#home" class="bg"></div>
-        <p id="p1">
-            <a href="menu/menu.html" class="button1">Welcome to Oslo Diner</a>
-        </p>
-    </span>
-
-
-
-    <section>
-        <div class="grid-container">
-            <div class="item4">Menu
-                <hr>
-            </div>
-            <div class="item5">
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
-            </div>
-
-
-            <div class="item6">
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
-            </div>
-
-            <div>
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
+    <div class="topnav" id="myTopnav">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">
+                Home
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./about/about.html" class="navigation__link">
+                About Us
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./about/about.html#team" class="navigation__link">
+                Team
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./menu/menu.html" class="navigation__link">
+                Menu
+              </a>
+            </li>
+            <li class="navigation__item">
+              <a href="./contact/contact.html" class="navigation__link">
+                Contact Us
+              </a>
+            </li> </nav> </div> <div class="nav-container">
+            <a href="index.html"><img src="https://res.cloudinary.com/jesmanto/image/upload/v1567521912/oslo_logo_e0y3gs.png" alt="oslo logo"></a>
+            <div class="topnav-container">
+              <a href="./contact/contact.html" class="nav">Contact Us</a>
+              <a href="./menu/menu.html" class="nav">Menu</a>
+              <a href="./about/about.html#team" class="nav">Team</a>
+              <a href="./about/about.html" class="nav">About Us</a>
+              <a href="#" class="active nav">Home</a>
             </div>
 
-            <div class="item8">
-                <div class="content">
-                    <img src="images/aboutusdish.jpg">
-                    <p><button onclick="Redirect()" class="Ordbutton">Check Our Menu</button></p>
-                </div>
-            </div>
-
-
-            <!-- <div class="item9">Team<hr></div>
-                    <div class="item10">
-                        <div class="content">
-                            <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                            <div class="desc">Add a description of the image here</div>
-                        </div>  
-                    </div>
-                    <div class="item11">
-                        <div class="content">
-                            <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                            <div class="desc">Add a description of the image here</div>
-                        </div>
-                    </div>
-                <div class="item12">
-                    <div class="content">
-                        <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-                <div class="item13">
-                    <div class="content">
-                        <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-
-                <div class="item115">
-                    <div class="content">
-                        <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-                    
-                <div class="item16">
-                    <div class="content">
-                        <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div>
-            
-            
-                <div class="item17">
-                    <div class="content">
-                        <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>    
-                </div>
-                    
-                <div class="item18">
-                    <div class="content">
-                        <img src="images/avatar2.png" alt="Avatar" class="avatar">
-                        <div class="desc">Add a description of the image here</div>
-                    </div>
-                </div> -->
-
-
-        </div>
-
-    </section>
-
-
-
-
-    <div class="footer">
-        <p>&copy; team_oslo 2019</p>
+      </div>
     </div>
-    <script src="main.js"></script>
+
+  </header>
+
+<div class="body">
+<div class="hero-background">
+    <div id="#home" class="bg">
+      <div class="overlay">
+        <h1 class="hero-text">
+          <span class="message">Welcome to Oslo Diner</span>
+          <button class="" role="button">
+            <a href="menu/menu.html" class="btn-outline-warning">Browse Menu</a>
+          </button>
+          <span class="down-arrow">
+            <a href="#menu">&DoubleDownArrow;</a>
+          </span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center;" class="video">
+    <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/hAPqHrB_FOg" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+      alt="Introductory Video"></iframe>
+  </div>
+
+  <section id="menu">
+    <h1 class="menu-heading">Menu
+      <hr>
+    </h1>
+
+    <div class="comments">
+    <p>
+      Eating is an art, much like love making.
+      Good food hits the right spots and takes you on a high that rivals cloud 9.
+      At Oslo Diner we do food right and serve you in an ambience that is designed specifically to feed your fantasy.
+      </p>
+    
+    <p>
+      How would you like to recieve your orders immediately you walk in to the Diner?
+      Really though, why should you have to wait so long to eat food you are paying for?
+      Never again!
+      Better still, imagine ordering classic food from the comfort of your home or office and recieving real time delivery.
+      Ever had animated walls taking you on a journey around different sides of the globe as you eat? At Oslo Diner, we thrive on fulfilling your desires - and yes, your wild desires are welcome too.
+      </p>
+
+     <p> 
+      You deserve Class, You are worthy of Fine Dining, and we're at your service - the Scandinavian style.
+      </p>
+  </div>
+
+
+    <div class="grid-container">
+      <div class="item5">
+        <div class="content">
+          <img src="https://res.cloudinary.com/drwf1wdsc/image/upload/v1567499377/05_uzqkfv.jpg" alt="Oslo food menu's">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
+
+
+      <div class="item6">
+        <div class="content">
+          <img src="https://res.cloudinary.com/drwf1wdsc/image/upload/v1567499436/aboutusdish_iwfkch.jpg" alt="Oslo food menu's">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
+
+      <div>
+        <div class="content">
+          <img src="https://res.cloudinary.com/drwf1wdsc/image/upload/v1567498930/01_huc6mo.jpg" alt="Oslo food menu's">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
+
+      <div class="item8">
+        <div class="content">
+          <img src="https://res.cloudinary.com/drwf1wdsc/image/upload/v1567500965/ww-blaetterteigpasteten_2905_payfec.jpg" alt="Oslo food menu's">
+          <button onclick="Redirect()" class="Ordbutton btn">Check Our Menu</button>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </section>
+</div>
+  
+<div class="comments">
+  <h3>Our Reviews</h3>
+  <p>Check out what other high-class customers are saying about their Oslo Diner experience:</p>
+</div>
+
+<div class="container">
+    <div class="comments">
+        <section class="top-div">
+            <div class="div-pic">
+            <img src="https://res.cloudinary.com/faveygirl/image/upload/v1567451924/ww-blaetterteigpasteten_2905_ylsoo1.jpg" alt="blaetterteigpasteten_2905_ylsoo1" title="Skyline" />
+            </div>
+            <div class="div-text">
+                <h4>I loved the Cake!</h4>
+                <p>I have always been a cake lover and so finding cakes that met my taste standards is a task in itself.
+                  I visited Oslo Diner and had the cake desert serving, and my oh my! I am literally addicted to the Oslo Diner flavour!
+                Wow! This one blew my mind!</p>
+                <p><i>By James Onuoha | August 25, 2019</i></p>
+            </div>
+        </section>
+
+        <section class="top-div">
+            <div class="div-pic">
+              <img src="https://res.cloudinary.com/drwf1wdsc/image/upload/v1567506258/The_Boutique_Bed_and_Breakfast_x9qozg.jpg" alt="a Kiwi, lime, pear" title="Juicy Fruit" />
+            </div>
+            <div class="div-text">
+                <h4>Super Home Delivery Service</h4>
+                <p>We all know how restaurants promise high heavens for meagre services.
+                  So, when I placed order for the Oslo Diner home delivery, I really wasn't expecting anything spectacular.
+                  When the food came though, I couldn't hide my amazement. Not only, did the food arrive within 15minutes of ordering,
+                  they also got my orders accurately and the packaging was a sight to behold. I'm definitely recommending Oslo Diner.
+                </p>
+                <p><i>By Chucks Brown | August 28, 2019</i></p>
+            </div>
+        </section>
+    
+        <section class="top-div">
+            <div class="div-pic">
+            <img src="https://res.cloudinary.com/faveygirl/image/upload/v1567451198/vegetarian-diet-plan-1296x728-feature_piblwq.jpg" alt="Yellow roller coaster track" title="Roller Track" />
+            </div>
+            <div class="div-text">
+                <h4>Oslo Diner serves Veggies with the spice!</h4>
+                <p>If you are a vegetarian here in Nigeria, you already know the daily struggle.
+                  But with Oslo Diner, my experience was pleasantly different. If you're on a veggie diet plan and you haven't signed up as a registered Oslo Diner customer, believe me when I say you're missing!
+                </p>
+                <p><i>By Adeola Abiodum | August 30, 2019</i></p>
+            </div>
+        </section>
+
+        <section class="top-div">
+            <div class="div-pic">
+              <img src="https://res.cloudinary.com/faveygirl/image/upload/v1567450859/african-dishes_hagw7t.jpg" alt="Oslo Diner" />
+            </div>
+            <div class="div-text">
+                <h4>African Flavour</h4>
+                <p>I like how the food at Oslo Diner has that homely taste and flavour that reminds me of home!</p>
+                <p><i>By Ada Nne | September 2, 2019</i></p>
+            </div>
+        </section>   
+    </div>
+</div>
+
+
+  <div class="footer">
+    <p>&copy; <small>team_oslo 2019</small></p>
+  </div>
+  <script src="main.js"></script>
 </body>
 
 </html>
