@@ -42,14 +42,14 @@ body {
   border: 1px solid #ccc;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   text-align: center;
-  transform: translate(-50% , -50%);
-  -webkit-transform: translate(-50% , -50%);
-  -moz-transform: translate(-50% , -50%);
-  -ms-transform: translate(-50% , -50%);
-  -o-transform: translate(-50% , -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
 
-.pay{
+.pay {
   padding: 0.6rem 1rem;
   font-size: 1.3rem;
   line-height: 1.5;
@@ -78,11 +78,11 @@ body {
   border-color: #de6c09;
 }
 
-.pay:focus{
+.pay:focus {
   box-shadow: 0 0 0 #de6c09;
 }
 
-.pay:active{
+.pay:active {
   color: #fff;
   background-color: #ffc107;
   border-color: #ffc107;
@@ -101,7 +101,7 @@ body {
   width: 5rem;
 }
 
-#myTopnav{
+#myTopnav {
   position: fixed;
 }
 
@@ -115,7 +115,8 @@ body {
   width: 100%;
   height: 90px;
   filter: alpha(opacity=50);
-  /*ForIE8andearlier*/padding: 10px 5%;
+  /*ForIE8andearlier*/
+  padding: 10px 5%;
   border-bottom: 5px solid goldenrod;
   z-index: 10;
   transition: border-bottom .2s ease;
@@ -130,9 +131,9 @@ body {
   border-bottom: 8px solid goldenrod;
 }
 
-.topnav-container{
- opacity: 1;
- visibility: visible;
+.topnav-container {
+  opacity: 1;
+  visibility: visible;
   width: 70%;
   height: 60px;
   display: block;
@@ -172,11 +173,12 @@ body {
   overflow: hidden;
 }
 
-@media(max-width: 750px){
-  .topnav-container{
+@media(max-width: 750px) {
+  .topnav-container {
     display: none;
   }
 }
+
 /* HERO BACKGROUND OVERLAY */
 .overlay {
   padding: 650px 0;
@@ -205,15 +207,18 @@ body {
   background-image: none;
   border-color: #ffc107;
 }
+
 .btn-outline-warning:hover {
   color: #fff;
   background-color: #ffc107;
   border-color: #ffc107;
 }
+
 .btn-outline-warning:focus,
 .btn-outline-warning.focus {
   box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.5);
 }
+
 .btn-outline-warning:active,
 .btn-outline-warning.active {
   color: #fff;
@@ -270,10 +275,10 @@ body {
   text-decoration: none;
 }
 
-@media(max-width: 750px){
-  .hero-text span { 
-  max-width: 450px;
-  margin:  auto;
+@media(max-width: 750px) {
+  .hero-text span {
+    max-width: 450px;
+    margin: auto;
   }
 }
 
@@ -288,12 +293,12 @@ hr {
   width: 200px;
 }
 
-.center > h1 {
+.center>h1 {
   font-weight: 700;
   font-size: 5em;
 }
 
-.video{
+.video {
   overflow: hidden;
 }
 
@@ -316,13 +321,13 @@ hr {
 
 }
 
-.menu-heading{
+.menu-heading {
   width: 100%;
   text-align: center;
   font-size: 30px;
 }
 
-.grid-container > div {
+.grid-container>div {
   background-color: #f1f1f1;
   text-align: center;
   padding: 20px;
@@ -336,9 +341,9 @@ hr {
 
 @media (max-width: 600px) {
   .grid-container {
-   grid-auto-flow: row;
-   display: block;
- 
+    grid-auto-flow: row;
+    display: block;
+
   }
 }
 
@@ -380,15 +385,17 @@ div.content img {
   height: 300px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
   div.content img {
     width: 100%;
     height: auto;
   }
-  .grid-container > div {
+
+  .grid-container>div {
     margin: 0 30px;
+  }
 }
-}
+
 .Ordbutton {
   border: none;
   outline: 0;
@@ -500,7 +507,7 @@ figure {
 }
 
 .cta:after {
-  content: " N" attr(value) "";
+  content: " N"attr(value) "";
   /* display: inline-flex;
   margin: 0 0 .5em .5em; */
 }
@@ -522,15 +529,18 @@ figure {
   background-image: none;
   border-color: #f8f9fa;
 }
+
 .btn-outline-light:hover {
   color: #de6c09;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
 }
+
 .btn-outline-light:focus,
 .btn-outline-light.focus {
   box-shadow: 0 0 0 3px rgba(248, 249, 250, 0.5);
 }
+
 .btn-outline-light:active,
 .btn-outline-light.active,
 .show {
@@ -622,6 +632,7 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
   margin: 0 2% 2% 0;
   overflow: hidden;
 }
+
 #about-oslo {
   max-width: 100%;
   margin: auto;
@@ -632,6 +643,7 @@ ___________________CSS STYLING FOR ABOUT PAGE___________________________________
     float: none;
     width: 80%;
   }
+
   #about-oslo {
     max-width: 80%;
     margin: auto;
@@ -717,6 +729,7 @@ div .descr .name {
 }
 
 @media (max-width: 790px) {
+
   .title,
   #oslo-img {
     margin: auto;
@@ -727,6 +740,7 @@ div .descr .name {
   text-align: center;
   margin: 30px;
 }
+
 button.border-url:hover {
   border: 1px solid#966116;
 }
@@ -767,7 +781,7 @@ __________________CSS STYLING FOR THE CONTACT US PAGE___________________________
 }
 
 #contact p {
-line-height: 23px;
+  line-height: 23px;
 }
 
 #contact-form {
@@ -775,6 +789,7 @@ line-height: 23px;
   padding: 5% 0 5% 10%;
   display: inline-block;
 }
+
 #contact-form form input {
   width: 100%;
   padding: 12px 20px;
@@ -799,40 +814,43 @@ textarea {
 }
 
 #contact-form form button {
-    padding: 0.4rem 1.2rem;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-    background: transparent;
-    display: inline-block;
-    font-weight: normal;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.5rem 0.75rem;
-    line-height: 1.25;
-    border-radius: 0.25rem;
-    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
-      box-shadow 0.15s ease-in-out;
-    color: #de6c09;
-    background-image: none;
-    border-color: #de6c09;
-  }
-  #contact-form form button:hover {
-    color: #fff;
-    background-color: #de6c09;
-    border-color: #de6c09
-  }
-  #contact-form form button:focus{
-    box-shadow: 0 0 0 3px #de6c09;
-  }
-  #contact-form form button:active{
-    color: #fff;
-    background-color: #de6c09;
-    border-color:#de6c09
-  }
+  padding: 0.4rem 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  background: transparent;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  line-height: 1.25;
+  border-radius: 0.25rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    box-shadow 0.15s ease-in-out;
+  color: #de6c09;
+  background-image: none;
+  border-color: #de6c09;
+}
+
+#contact-form form button:hover {
+  color: #fff;
+  background-color: #de6c09;
+  border-color: #de6c09
+}
+
+#contact-form form button:focus {
+  box-shadow: 0 0 0 3px #de6c09;
+}
+
+#contact-form form button:active {
+  color: #fff;
+  background-color: #de6c09;
+  border-color: #de6c09
+}
 
 #contact-address {
   /* position: absolute; */
@@ -871,7 +889,7 @@ textarea {
 /* ________________________________________________________________________
 _________________CSS STYLING FOR THE FAQ PAGE_______________________________ */
 
-header#banner{
+header#banner {
   max-width: 100%;
   margin: 6% auto;
   height: 300px;
@@ -882,8 +900,8 @@ header#banner{
   font-size: 2rem;
 }
 
-header#banner h1{
-  margin-top: 10%;  
+header#banner h1 {
+  margin-top: 10%;
 }
 
 .fqcontainer {
@@ -911,30 +929,34 @@ header#banner h1{
   font-size: 1em;
 }
 
-.question, .q-tag{
+.question,
+.q-tag {
   border-bottom: 2px solid orangered;
   padding: 1%;
 }
 
-.q-tag{
+.q-tag {
   color: white;
   border: 2px solid orangered;
   background-color: orangered;
   font-weight: bolder;
 }
 
-.more{
+.more {
   border: 1px solid orangered;
   background-color: orangered;
   border-radius: 3px;
   padding: 0 2px;
 }
-.more a:link, .more a:visited, .more a:active{
+
+.more a:link,
+.more a:visited,
+.more a:active {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
-.ans{
+.ans {
   border-bottom: 2px solid rgba(219, 109, 6, 0.5);
   background-color: rgba(219, 76, 20, 0.2);
   max-width: 100%;
@@ -947,12 +969,13 @@ header#banner h1{
   .youtube {
     max-width: 400px;
   }
-  .ans{
+
+  .ans {
     max-width: 100%;
     margin-bottom: 6%;
   }
 
-  header#banner{
+  header#banner {
     max-width: 100%;
     margin: 6% 0 1% 0;
     height: 200px;
@@ -963,15 +986,15 @@ header#banner h1{
     font-size: 1.5rem;
   }
 
-  header#banner h1{
-    margin-top: 20%;  
+  header#banner h1 {
+    margin-top: 20%;
   }
 
-  .faq{
-    margin-bottom: 50px;  
+  .faq {
+    margin-bottom: 50px;
   }
 
-  .fqcontainer{
+  .fqcontainer {
     padding: 0 2%;
   }
 }
@@ -980,7 +1003,7 @@ header#banner h1{
 
 /* ____________________________________________________________________________
 __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
-.team-bg{
+.team-bg {
   /* background-image: url(../images/Shop1.png); */
   background-image: url(https://res.cloudinary.com/drwf1wdsc/image/upload/v1567501218/shop1_kpww76.png);
 
@@ -996,28 +1019,30 @@ __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
   background-size: cover;
 }
 
-.team-header{
+.team-header {
   -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px white;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 3.5rem;
+  -webkit-text-stroke: 1px white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3.5rem;
 }
-.team-main{
-margin-top: 5rem;
+
+.team-main {
+  margin-top: 5rem;
 }
 
 #overlay {
   position: absolute;
-    width: 100%;
-    height: 70vh;
-    /* top: 0; */
-    /* left: 0; */
-    /* right: 0; */
-    /* bottom: 0; */
-    background-color: rgba(0,0,0,0.76);
-    /* z-index: 2; */
-    overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  background-color: rgba(0, 0, 0, 0.76);
+  /* z-index: 2; */
+  overflow: hidden;
 }
+
 .team-container {
   display: flex;
   flex-direction: row;
@@ -1041,7 +1066,7 @@ margin-top: 5rem;
   margin: 10px;
 }
 
-.team-img{
+.team-img {
   /* background: url(./team/images/Udeme_Chris.png); */
   background-position: center;
   background-repeat: no-repeat;
@@ -1054,62 +1079,133 @@ margin-top: 5rem;
   border: #d1af5f solid 0.5rem;
 }
 
-.team-des p{
+.team-des p {
   margin: 0;
   font-size: small;
 }
 
-.team-item .team-item-1{
+.team-item .team-item-1 {
   background-image: url(./team/images/Agbo\ Monica.png);
 }
 
-button{
+button {
   cursor: pointer;
 }
 
 /* comment stylling  */
-.comments{
-  font-variant: normal;
-  font-size: 1rem;
+
+.comments {
   width: 75%;
   margin: auto;
+}
+
+.comments,
+.comments-container {
   text-align: center;
+  font-variant: normal;
+  font-size: 1rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
-.top-div{
+
+.comments-container {
+  width: 100%;
+  height: 400px;
+  /* border: red solid 3px; */
+  position: relative;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  border-bottom: dashed #888888;
-  margin: 20px 5px 0px 3px;
+  justify-content: center;
+  align-items: center;
 }
-.div-text, .div-pic{
-  width: 48%;
+
+.top-div {
+  height: 350px;
+  width: 390px;
+  overflow: hidden;
+  /* border: red solid 3px; */
+  position: absolute;
+  text-align: center;
 }
-.div-pic img{
-  width: 80%;
-}
-h2{
+
+
+h2 {
   font-size: 2rem;
 }
-h4{
+
+h4 {
   font-size: 1rem;
 }
 
-@media (max-width: 500px) {
-
-  .top-div{
-      display: block;
-  }
-  .div-text, .div-pic{
-      width: 80%;
-      margin: auto;
-      text-align: center
-  }
-
+.top-div {
+  opacity: 0;
+  animation: imageAnimation 40s linear infinite;
 }
 
-.top-div:nth-child(1), .top-div:nth-child(3){
-  background-color: #de6c09;
-    border-radius: 8px;
-    flex-direction: row-reverse;
+
+.top-div:nth-child(2) {
+  animation-delay: 10s;
 }
+
+.top-div:nth-child(3) {
+  animation-delay: 20s;
+}
+
+.top-div:nth-child(4) {
+  animation-delay: 30s;
+}
+
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+
+  20% {
+    opacity: 1
+  }
+
+  30% {
+    opacity: 0
+  }
+}
+
+.shine {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  width: 70%;
+}
+.shine:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+.stars {
+  height: auto;
+  color: gold;
+  text-align: center;
+
+}
+.stars:after {
+    content: "★";
+    font-size: 2em;
+    text-shadow:
+      -2em 0,
+      -1em 0,
+      1em 0,
+      2em 0;
+  }
