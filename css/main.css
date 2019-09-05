@@ -1066,3 +1066,39 @@ margin-top: 5rem;
 button{
   cursor: pointer;
 }
+
+.comments{
+  font-variant: normal;
+  font-size: 1.5em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.top-div{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: dashed #888888;
+  margin: 20px 5px 0px 3px;
+}
+.div-text, .div-pic{
+  width: 48%;
+}
+.div-pic img{
+  width: 100%;
+}
+h2{
+  font-size: 2.5rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+
+  .top-div{
+      display: flex;
+      flex-direction: column
+  }
+  .div-text, .div-pic{
+      width: 100%;
+  }
+
+}
