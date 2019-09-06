@@ -1068,7 +1068,7 @@ __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
 }
 
 .team-img {
-  /* background: url(./team/images/Udeme_Chris.png); */
+  /* background: url(https://res.cloudinary.com/jesmanto/image/upload/v1567521912/oslo_logo_e0y3gs.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1086,7 +1086,7 @@ __________________CSS STYLING FOR THE TEAM PAGE___________________________ */
 }
 
 .team-item .team-item-1 {
-  background-image: url(./team/images/Agbo\ Monica.png);
+  background-image: url(https://res.cloudinary.com/jesmanto/image/upload/v1567521912/oslo_logo_e0y3gs.png);
 }
 
 button {
