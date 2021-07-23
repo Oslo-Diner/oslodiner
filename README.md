@@ -1,7 +1,7 @@
 ## oslo_diner
- Oslo Diner website with Rave Flutterwave payment gateway
+ Oslo Diner website with Rave Flutterwave payment gateway. [View proposal here](https://docs.google.com/document/d/1SOA66uX6b9QrWSN4FVJLYwi3T9Q3z_6pRNzOdG7j_24/edit?usp=sharing)
  
- To vist the site <a href="https://oslo-diner.github.io/oslodiner/">CLICK HERE</a>
+ To vist the site, <a href="https://oslo-diner.github.io/oslodiner/">click here</a>
 
 ## To try out the payment gateway use these dummy Card deatils 
 
